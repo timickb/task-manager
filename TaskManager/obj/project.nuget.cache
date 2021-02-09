@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "dBR/LJjsACtDoY/2kISUYLbABJsh16vfO/HU77Qd+D/RmYXCr46sts1UE87kXA2HPRWE51P+QPoDBDe+jnX2Eg==",
+  "success": true,
+  "projectFilePath": "/home/timickb/code/TaskManager/TaskManager/TaskManager.csproj",
+  "expectedPackageFiles": [
+    "/home/timickb/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.8/microsoft.aspnetcore.app.ref.3.1.8.nupkg.sha512"
+  ],
+  "logs": []
+}
