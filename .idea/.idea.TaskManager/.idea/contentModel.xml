@@ -6,7 +6,10 @@
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="TaskManager" t="IncludeRecursive">
         <e p="Program.cs" t="Include" />
+        <e p="Project.cs" t="Include" />
+        <e p="Task.cs" t="Include" />
         <e p="TaskManager.csproj" t="IncludeRecursive" />
+        <e p="TaskStatus.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "dBR/LJjsACtDoY/2kISUYLbABJsh16vfO/HU77Qd+D/RmYXCr46sts1UE87kXA2HPRWE51P+QPoDBDe+jnX2Eg==",
+  "dgSpecHash": "oy+jY1TNpKfn3clv2ate4X7s9+NhuAOWdGjosGS0+lazK0SquFTkYCG80F3Dtu2UX0nJvNXn2TnWuDJa1guIDg==",
   "success": true,
   "projectFilePath": "/home/timickb/code/TaskManager/TaskManager/TaskManager.csproj",
   "expectedPackageFiles": [
+    "/home/timickb/.nuget/packages/newtonsoft.json/13.0.1-beta1/newtonsoft.json.13.0.1-beta1.nupkg.sha512",
     "/home/timickb/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.8/microsoft.aspnetcore.app.ref.3.1.8.nupkg.sha512"
   ],
   "logs": []
