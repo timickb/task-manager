@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager", "TaskManager\TaskManager.csproj", "{3E790604-1655-4B33-8154-05A2557097A2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManagerLib", "TaskManagerLib\TaskManagerLib.csproj", "{ED8E211C-2779-46FC-9A18-2008A7570D1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManagerCLI", "TaskManagerCLI\TaskManagerCLI.csproj", "{95F29CDA-58B4-4109-B45C-E60D4314D86A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +10,13 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3E790604-1655-4B33-8154-05A2557097A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3E790604-1655-4B33-8154-05A2557097A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3E790604-1655-4B33-8154-05A2557097A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3E790604-1655-4B33-8154-05A2557097A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED8E211C-2779-46FC-9A18-2008A7570D1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED8E211C-2779-46FC-9A18-2008A7570D1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED8E211C-2779-46FC-9A18-2008A7570D1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED8E211C-2779-46FC-9A18-2008A7570D1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95F29CDA-58B4-4109-B45C-E60D4314D86A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95F29CDA-58B4-4109-B45C-E60D4314D86A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95F29CDA-58B4-4109-B45C-E60D4314D86A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95F29CDA-58B4-4109-B45C-E60D4314D86A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
