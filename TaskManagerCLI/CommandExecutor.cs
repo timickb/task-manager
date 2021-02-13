@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using TaskManagerCLI.Commands;
 
 namespace TaskManagerCLI
 {
@@ -10,6 +11,7 @@ namespace TaskManagerCLI
         public CommandExecutor()
         {
             _commands = new List<ICommand>();
+            _commands.Add(new AddUserCommand());
         }
 
         /// <summary>
@@ -26,6 +28,11 @@ namespace TaskManagerCLI
             foreach (var command in _commands.Where(command => command.Name == commandName))
             {
                 return command.Run(args);
+            }
+
+            if (commandName == Program.ExitCommand)
+            {
+                return CommandExecutionResult.ExitCommand;
             }
             
             // If command "commandName" wasn't found, execute the default command.
