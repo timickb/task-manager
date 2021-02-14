@@ -1,14 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using TaskManagerLib;
+using TaskManagerAPI;
 
 namespace TaskManagerCLI
 {
-
-    public delegate EventHandler UserRemoved(object sender, EventArgs args);
-    public delegate EventHandler UserAdded(object sender, EventArgs args);
-
     /// <summary>
     /// Task Manager :)
     /// </summary>
@@ -22,6 +18,8 @@ namespace TaskManagerCLI
             
             Users = new List<User>();
             Projects = new List<Project>();
+            
+            
         }
         
         public static TaskManager GetInstance()

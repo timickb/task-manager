@@ -1,16 +1,25 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using TaskManagerLib;
+using TaskManagerAPI;
 
 namespace TaskManagerCLI
 {
+    /// <summary>
+    /// Removing user event handler.
+    /// </summary>
+    /// <param name="user">User object</param>
+    public delegate void UserRemovedEvent(User user);
+    
+    
     /// <summary>
     /// All methods connected with users I decided
     /// to separate to a partial class.
     /// </summary>
     public partial class TaskManager
     {
+        public UserRemovedEvent UserRemoved;
+        
         /// <summary>
         /// Adds a new user by the name.
         /// Id for this user will be generated automatically.
@@ -41,7 +50,9 @@ namespace TaskManagerCLI
         /// <param name="user"></param>
         public void RemoveUser(User user)
         {
-            // TODO: decide how to automatically destroy task assignments.
+            UserRemoved.Invoke(user);
+            Users.Remove(user);
+
         }
         
         /// <summary>

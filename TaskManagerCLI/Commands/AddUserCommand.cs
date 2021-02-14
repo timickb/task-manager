@@ -1,4 +1,4 @@
-using TaskManagerLib;
+using TaskManagerAPI;
 
 namespace TaskManagerCLI.Commands
 {

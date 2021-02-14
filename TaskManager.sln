@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManagerLib", "TaskManagerLib\TaskManagerLib.csproj", "{ED8E211C-2779-46FC-9A18-2008A7570D1E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManagerAPI", "TaskManagerAPI\TaskManagerAPI.csproj", "{ED8E211C-2779-46FC-9A18-2008A7570D1E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManagerCLI", "TaskManagerCLI\TaskManagerCLI.csproj", "{95F29CDA-58B4-4109-B45C-E60D4314D86A}"
 EndProject

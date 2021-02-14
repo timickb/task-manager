@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace TaskManagerLib
+namespace TaskManagerAPI
 {
     public interface IAssignable
     {

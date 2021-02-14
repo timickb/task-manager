@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace TaskManagerLib
+namespace TaskManagerAPI
 {
     public class Project
     {

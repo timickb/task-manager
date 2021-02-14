@@ -1,4 +1,4 @@
-namespace TaskManagerLib
+namespace TaskManagerAPI
 {
     public enum TaskStatus
     {

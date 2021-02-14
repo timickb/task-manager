@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 
-namespace TaskManagerLib
+namespace TaskManagerAPI
 {
     public class User
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace TaskManagerLib
+namespace TaskManagerAPI
 {
     public class AssigningException : Exception
     {
