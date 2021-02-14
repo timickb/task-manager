@@ -9,6 +9,9 @@ namespace TaskManagerCLI
     public delegate EventHandler UserRemoved(object sender, EventArgs args);
     public delegate EventHandler UserAdded(object sender, EventArgs args);
 
+    /// <summary>
+    /// Task Manager :)
+    /// </summary>
     public partial class TaskManager
     {
         private static TaskManager _instance;
@@ -26,18 +29,9 @@ namespace TaskManagerCLI
             return _instance ??= new TaskManager();
         }
         
-        private Settings _settings;
-        
-        
+        private readonly Settings _settings;
         
         public List<User> Users { get; }
         public List<Project> Projects { get; }
-
-        
-
-        
-        
-        
-
     }
 }

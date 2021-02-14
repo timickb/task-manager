@@ -124,6 +124,28 @@ namespace TaskManagerCLI
             project.Tasks.Remove(task);
         }
         
+        /// <summary>
+        /// Gives a copy of project tasks list.
+        /// </summary>
+        /// <param name="projectId">Project id</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentException">Exception throws then the project
+        /// with specified id doesn't exist.</exception>
+        public List<Task> GetProjectTasksList(int projectId)
+        {
+            var project = Projects.Find(p => p.Id == projectId);
+            
+            if (project == null)
+            {
+                throw new ArgumentException($"Project with id {projectId} doesn't exist.");
+            }
+
+            Task[] list = { };
+            project.Tasks.CopyTo(list);
+
+            return list.ToList();
+        }
+        
         
     }
 }

@@ -20,16 +20,11 @@ namespace TaskManagerCLI
         /// task object is not IAssignable</exception>
         /// <exception cref="InvalidOperationException">Exception throws than the specified
         /// task doesn't allow to assign any more users to itself.</exception>
-        public void AssignUserToTask(User user, Task task)
+        public void AssignUserToTask(User user, IAssignable task)
         {
-            if (!(task is IAssignable))
-            {
-                throw new ArgumentException("Task object must be IAssignable.");
-            }
-
             try
             {
-                ((IAssignable) task).AddExecutor(user);
+                task.AddExecutor(user);
             }
             catch (AssigningException)
             {
@@ -42,15 +37,9 @@ namespace TaskManagerCLI
         /// </summary>
         /// <param name="user">User object</param>
         /// <param name="task">Task object</param>
-        /// <exception cref="ArgumentException">Exception throws than the specified
-        /// task object is not IAssignable</exception>
-        public void RemoveAssignedUserFromTask(User user, Task task)
+        public void RemoveAssignedUserFromTask(User user, IAssignable task)
         {
-            if (!(task is IAssignable))
-            {
-                throw new ArgumentException("Task object must be IAssignable.");
-            }
-            ((IAssignable) task).RemoveExecutor(user);
+            task.RemoveExecutor(user);
         }
 
         /// <summary>
@@ -70,15 +59,11 @@ namespace TaskManagerCLI
         /// <returns>List of users</returns>
         /// <exception cref="ArgumentException">Exception throws than the specified
         /// task object is not IAssignable</exception>
-        public List<User> GetTaskExecutorsList(Task task)
+        public List<User> GetTaskExecutorsList(IAssignable task)
         {
-            if (!(task is IAssignable))
-            {
-                throw new ArgumentException("Task object must be IAssignable.");
-            }
-            
+
             User[] list = { };
-            ((IAssignable) task).Executors.CopyTo(list);
+            task.Executors.CopyTo(list);
 
             return list.ToList();
         }
