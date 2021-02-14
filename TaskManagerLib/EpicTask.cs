@@ -10,5 +10,11 @@ namespace TaskManagerLib
         
         [JsonProperty("simple_tasks")]
         public List<SimpleTask> SimpleTasks { get; set; }
+
+        public override string ToString()
+        {
+            return $"[EpicTask #{Id}] {Name} ({Description}) | created {CreationDate} | " +
+                   $"{Status.ToString()} | {StoryTasks.Count + SimpleTasks.Count} connected subtasks.";
+        }
     }
 }

@@ -15,5 +15,10 @@ namespace TaskManagerLib
         {
             Executors.Remove(user);
         }
+
+        public override string ToString()
+        {
+            return $"[StoryTask #{Id}] {Name} ({Description}) | created {CreationDate} | {Status.ToString()}";
+        }
     }
 }

@@ -11,10 +11,12 @@
         <e p="CommandExecutor.cs" t="Include" />
         <e p="Commands" t="Include">
           <e p="AddUserCommand.cs" t="Include" />
+          <e p="RemoveUserCommand.cs" t="Include" />
         </e>
         <e p="ICommand.cs" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="Settings.cs" t="Include" />
+        <e p="TaskManager.Projects.cs" t="Include" />
         <e p="TaskManager.cs" t="Include" />
         <e p="TaskManagerCLI.csproj" t="IncludeRecursive" />
         <e p="Utils.cs" t="Include" />

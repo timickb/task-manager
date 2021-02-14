@@ -19,5 +19,10 @@ namespace TaskManagerLib
         {
             Executors.Remove(user);
         }
+
+        public override string ToString()
+        {
+            return $"[SimpleTask #{Id}] {Name} ({Description}) | created {CreationDate} | {Status.ToString()}";
+        }
     }
 }

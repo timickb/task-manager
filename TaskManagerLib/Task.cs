@@ -5,6 +5,9 @@ namespace TaskManagerLib
 {
     public class Task
     {
+        [JsonProperty("id")]
+        public int Id { get; set; }
+        
         [JsonProperty("name")]
         public string Name { get; set; }
         
@@ -16,6 +19,10 @@ namespace TaskManagerLib
         
         [JsonProperty("status")]
         public TaskStatus Status { get; set; }
-        
+
+        public override string ToString()
+        {
+            return $"[Task #{Id}] {Name} ({Description}) | created {CreationDate} | {Status.ToString()}";
+        }
     }
 }
