@@ -23,14 +23,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="123defad-be63-4d47-85f6-607e86c4706b" name="Default Changelist" comment="hmm... changes 2">
-      <change afterPath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Tasks.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Users.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="123defad-be63-4d47-85f6-607e86c4706b" name="Default Changelist" comment="hmm... changes 3">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Projects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Projects.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerLib/StoryTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerLib/StoryTask.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Tasks.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Tasks.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +148,7 @@
       <option name="presentableId" value="Default" />
       <updated>1612886769024</updated>
       <workItem from="1612886771213" duration="6119000" />
-      <workItem from="1613227332900" duration="17009000" />
+      <workItem from="1613227332900" duration="17724000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1613231868880</created>
@@ -183,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613300101259</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="hmm... changes 3">
+      <created>1613301545329</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1613301545329</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,7 +210,8 @@
     <MESSAGE value="adduser command" />
     <MESSAGE value="hmm... changes" />
     <MESSAGE value="hmm... changes 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="hmm... changes 2" />
+    <MESSAGE value="hmm... changes 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="hmm... changes 3" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1864" height="269" key="GridCell.Tab.0.bottom" timestamp="1613294959292">
@@ -243,10 +246,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="0" y="35" width="1920" height="1045" key="VCS.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1613294209751" />
-    <state x="455" y="4" width="1000" height="696" key="Vcs.Push.Dialog.v2" timestamp="1613300104220">
+    <state x="455" y="-34" width="1000" height="696" key="Vcs.Push.Dialog.v2" timestamp="1613301547240">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="455" y="4" width="1000" height="696" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1613300104220" />
+    <state x="455" y="-34" width="1000" height="696" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1613301547240" />
     <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1613296557398">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
