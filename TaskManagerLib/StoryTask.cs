@@ -18,7 +18,7 @@ namespace TaskManagerLib
 
         public override string ToString()
         {
-            return $"[StoryTask #{Id}] {Name} ({Description}) | created {CreationDate} | {Status.ToString()}";
+            return $"[StoryTask #{Id}] {Name} ({Description}) | Created {CreationDate} | {Status.ToString()}";
         }
     }
 }

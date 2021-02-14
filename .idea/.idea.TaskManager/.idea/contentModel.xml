@@ -17,6 +17,8 @@
         <e p="Program.cs" t="Include" />
         <e p="Settings.cs" t="Include" />
         <e p="TaskManager.Projects.cs" t="Include" />
+        <e p="TaskManager.Tasks.cs" t="Include" />
+        <e p="TaskManager.Users.cs" t="Include" />
         <e p="TaskManager.Utils.cs" t="Include" />
         <e p="TaskManager.cs" t="Include" />
         <e p="TaskManagerCLI.csproj" t="IncludeRecursive" />

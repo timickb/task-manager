@@ -24,6 +24,7 @@ namespace TaskManagerCLI
 
         public void CloseProject(Project project)
         {
+            // TODO: decide how to automatically unbind tasks from project.
         }
 
         /// <summary>
@@ -73,6 +74,54 @@ namespace TaskManagerCLI
             {
                 project.Description = desc;
             }
+        }
+
+        /// <summary>
+        /// Adds an existing task to the project
+        /// with specified id.
+        /// </summary>
+        /// <param name="projectId">Project id</param>
+        /// <param name="task">Existing task object</param>
+        /// <exception cref="ArgumentException">Exception throws then the project
+        /// with specified id doesn't exist.</exception>
+        /// <exception cref="InvalidOperationException">Exception throws then the project
+        /// doesn't able to take new tasks. </exception>
+        public void AttachTaskToProject(int projectId, Task task)
+        {
+            var project = Projects.Find(p => p.Id == projectId);
+
+            if (project == null)
+            {
+                throw new ArgumentException($"Project with id {projectId} doesn't exist.");
+            }
+
+            if (project.Tasks.Count >= _settings.MaxTasksAmountInProject)
+            {
+                throw new InvalidOperationException(
+                    "Maximum tasks amount for this projects has been already reached.");
+            }
+            
+            project.Tasks.Add(task);
+        }
+        
+        /// <summary>
+        /// Removes an existing task from the project
+        /// with specified id.
+        /// </summary>
+        /// <param name="projectId">Project id</param>
+        /// <param name="task">Existing task object</param>
+        /// <exception cref="ArgumentException">Exception throws then the project
+        /// with specified id doesn't exist.</exception>
+        public void RemoveTaskFromProject(int projectId, Task task)
+        {
+            var project = Projects.Find(p => p.Id == projectId);
+
+            if (project == null)
+            {
+                throw new ArgumentException($"Project with id {projectId} doesn't exist.");
+            }
+
+            project.Tasks.Remove(task);
         }
     }
 }
