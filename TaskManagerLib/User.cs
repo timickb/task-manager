@@ -9,5 +9,10 @@ namespace TaskManagerLib
         
         [JsonProperty("name")]
         public string Name { get; set; }
+
+        public override string ToString()
+        {
+            return $"[User #{Id}] {Name}";
+        }
     }
 }

@@ -23,14 +23,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="123defad-be63-4d47-85f6-607e86c4706b" name="Default Changelist" comment="adduser command">
-      <change afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/RemoveUserCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Projects.cs" afterDir="false" />
+    <list default="true" id="123defad-be63-4d47-85f6-607e86c4706b" name="Default Changelist" comment="hmm... changes">
+      <change afterPath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Utils.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerLib/Project.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerLib/Project.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerLib/Task.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerLib/Task.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Settings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Settings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Projects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Projects.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskManagerLib/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerLib/User.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,15 +61,10 @@
         <option value="$PROJECT_DIR$/TaskManager/User.cs" />
         <option value="$PROJECT_DIR$/TaskManagerLib/Class1.cs" />
         <option value="$PROJECT_DIR$/TaskManagerLib/TaskStatus.cs" />
-        <option value="$PROJECT_DIR$/TaskManagerLib/EpicTask.cs" />
         <option value="$PROJECT_DIR$/TaskManagerLib/IAssignable.cs" />
-        <option value="$PROJECT_DIR$/TaskManagerLib/StoryTask.cs" />
         <option value="$PROJECT_DIR$/TaskManagerLib/AssigningException.cs" />
-        <option value="$PROJECT_DIR$/TaskManagerLib/SimpleTask.cs" />
         <option value="$PROJECT_DIR$/TaskManagerLib/BugTask.cs" />
-        <option value="$PROJECT_DIR$/TaskManagerLib/User.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/Program.cs" />
-        <option value="$PROJECT_DIR$/TaskManagerCLI/Settings.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/CommandExecutionResult.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/ICommand.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/CommandExecutionStatus.cs" />
@@ -79,10 +73,16 @@
         <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/AddUserCommand.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/RemoveUserCommand.cs" />
         <option value="$PROJECT_DIR$/TaskManagerLib/Program.cs" />
-        <option value="$PROJECT_DIR$/TaskManagerCLI/TaskManager.cs" />
-        <option value="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Projects.cs" />
         <option value="$PROJECT_DIR$/TaskManagerLib/Project.cs" />
         <option value="$PROJECT_DIR$/TaskManagerLib/Task.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerLib/StoryTask.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerLib/SimpleTask.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerLib/EpicTask.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerLib/User.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Utils.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Projects.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerCLI/TaskManager.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerCLI/Settings.cs" />
       </list>
     </option>
   </component>
@@ -150,7 +150,7 @@
       <option name="presentableId" value="Default" />
       <updated>1612886769024</updated>
       <workItem from="1612886771213" duration="6119000" />
-      <workItem from="1613227332900" duration="14241000" />
+      <workItem from="1613227332900" duration="15731000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1613231868880</created>
@@ -166,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613233102988</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="hmm... changes">
+      <created>1613298778889</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1613298778889</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,7 +196,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="adduser command" />
-    <option name="LAST_COMMIT_MESSAGE" value="adduser command" />
+    <MESSAGE value="hmm... changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="hmm... changes" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1864" height="269" key="GridCell.Tab.0.bottom" timestamp="1613294959292">
@@ -224,10 +232,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="0" y="35" width="1920" height="1045" key="VCS.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1613294209751" />
-    <state x="455" y="80" width="1000" height="696" key="Vcs.Push.Dialog.v2" timestamp="1613233105049">
+    <state x="455" y="42" width="1000" height="696" key="Vcs.Push.Dialog.v2" timestamp="1613298780816">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="455" y="80" width="1000" height="696" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1613233105049" />
+    <state x="455" y="42" width="1000" height="696" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1613298780816" />
     <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1613296557398">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

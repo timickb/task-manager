@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using TaskManagerLib;
@@ -13,7 +14,7 @@ namespace TaskManagerCLI
         public void CreateProject(string name, string description)
         {
             var nextId = Projects.Select(project => project.Id).Prepend(0).Max() + 1;
-            
+
             Projects.Add(new Project
             {
                 Name = name,
@@ -23,9 +24,8 @@ namespace TaskManagerCLI
 
         public void CloseProject(Project project)
         {
-            
         }
-        
+
         /// <summary>
         /// Gives a copy of Projects list.
         /// </summary>
@@ -35,6 +35,44 @@ namespace TaskManagerCLI
             Project[] list = { };
             Projects.CopyTo(list);
             return list.ToList();
+        }
+
+        /// <summary>
+        /// Finds project with specified Id and
+        /// changes its name.
+        /// </summary>
+        /// <param name="id">Project Id</param>
+        /// <param name="name">New project Name</param>
+        /// <exception cref="ArgumentException">Exception throws than the name
+        /// length is more than 47 symbols</exception>
+        public void ChangeProjectName(int id, string name)
+        {
+            if (!IsProjectNameCorrect(name))
+                throw new ArgumentException("Incorrect project name");
+
+            foreach (var project in Projects.Where(project => project.Id == id))
+            {
+                project.Name = name;
+            }
+        }
+
+        /// <summary>
+        /// Finds project with specified Id and
+        /// changes its name.
+        /// </summary>
+        /// <param name="id">Project Id</param>
+        /// <param name="desc">New project Description</param>
+        /// <exception cref="ArgumentException">Exception throws than the description
+        /// length is more than 99 symbols</exception>
+        public void ChangeProjectDescription(int id, string desc)
+        {
+            if (!IsProjectDescriptionCorrect(desc))
+                throw new ArgumentException("Incorrect description");
+
+            foreach (var project in Projects.Where(project => project.Id == id))
+            {
+                project.Description = desc;
+            }
         }
     }
 }
