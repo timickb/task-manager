@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using TaskManagerLib;
 
 namespace TaskManagerCLI
@@ -49,6 +51,36 @@ namespace TaskManagerCLI
                 throw new ArgumentException("Task object must be IAssignable.");
             }
             ((IAssignable) task).RemoveExecutor(user);
+        }
+
+        /// <summary>
+        /// Changes task status.
+        /// </summary>
+        /// <param name="task">Task object</param>
+        /// <param name="status">Task status from enum</param>
+        public void ChangeTaskStatus(Task task, TaskStatus status)
+        {
+            task.Status = status;
+        }
+
+        /// <summary>
+        /// Gives the executors list for the specified task.
+        /// </summary>
+        /// <param name="task">Task object</param>
+        /// <returns>List of users</returns>
+        /// <exception cref="ArgumentException">Exception throws than the specified
+        /// task object is not IAssignable</exception>
+        public List<User> GetTaskExecutorsList(Task task)
+        {
+            if (!(task is IAssignable))
+            {
+                throw new ArgumentException("Task object must be IAssignable.");
+            }
+            
+            User[] list = { };
+            ((IAssignable) task).Executors.CopyTo(list);
+
+            return list.ToList();
         }
     }
 }
