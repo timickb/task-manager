@@ -5,7 +5,7 @@ using TaskManagerAPI;
 
 namespace TaskManagerCLI.Commands
 {
-    public class UsersListCommand : ICommand
+    public class UsersListCommand : IExecutable
     {
         public string Name => "users";
         public string Usage => "";

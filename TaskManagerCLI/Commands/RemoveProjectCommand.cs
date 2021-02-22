@@ -2,7 +2,7 @@ using TaskManagerAPI;
 
 namespace TaskManagerCLI.Commands
 {
-    public class RemoveProjectCommand : ICommand
+    public class RemoveProjectCommand : IExecutable
     {
         public string Name => "remove_project";
         public string Usage => "<projectId>";

@@ -37,10 +37,12 @@
           <e p="CreateProjectCommand.cs" t="Include" />
           <e p="ProjectsListCommand.cs" t="Include" />
           <e p="RemoveProjectCommand.cs" t="Include" />
+          <e p="RemoveTaskCommand.cs" t="Include" />
           <e p="RemoveUserCommand.cs" t="Include" />
+          <e p="TasksListCommand.cs" t="Include" />
           <e p="UsersListCommand.cs" t="Include" />
         </e>
-        <e p="ICommand.cs" t="Include" />
+        <e p="IExecutable.cs" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="Settings.cs" t="Include" />
         <e p="Storage.cs" t="Include" />

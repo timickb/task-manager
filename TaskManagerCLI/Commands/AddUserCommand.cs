@@ -3,7 +3,7 @@ using TaskManagerAPI;
 
 namespace TaskManagerCLI.Commands
 {
-    public class AddUserCommand : ICommand
+    public class AddUserCommand : IExecutable
     {
         public string Name => "adduser";
         public string Usage => "<userName>";

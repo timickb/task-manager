@@ -6,11 +6,11 @@ namespace TaskManagerCLI
 {
     public class CommandExecutor
     {
-        private readonly List<ICommand> _commands;
+        private readonly List<IExecutable> _commands;
 
         public CommandExecutor()
         {
-            _commands = new List<ICommand>();
+            _commands = new List<IExecutable>();
             _commands.Add(new AddUserCommand());
             _commands.Add(new RemoveUserCommand());
             _commands.Add(new UsersListCommand());
@@ -19,6 +19,7 @@ namespace TaskManagerCLI
             _commands.Add(new ProjectsListCommand());
             _commands.Add(new ChangeProjectNameCommand());
             _commands.Add(new AddTaskCommand());
+            _commands.Add(new TasksListCommand());
         }
 
         /// <summary>

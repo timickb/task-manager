@@ -1,10 +1,9 @@
 namespace TaskManagerCLI.Commands
 {
-    public class ChangeProjectNameCommand : IExecutable
+    public class RemoveTaskCommand : IExecutable
     {
-        public string Name => "change_project_name";
-        public string Usage => "<projectId> <newProjectName>";
-
+        public string Name => "remove_task";
+        public string Usage => "<projectId> <taskId>";
         public CommandExecutionResult Run(string[] args)
         {
             if (args.Length < 3)
@@ -13,21 +12,21 @@ namespace TaskManagerCLI.Commands
                     CommandExecutionStatus.WrongUsage,
                     $"Usage: {Name} {Usage}");
             }
-
+            
             if (!int.TryParse(args[1], out var projectId))
             {
                 return new CommandExecutionResult(
                     CommandExecutionStatus.Fail,
                     "Project Id must be an integer.");
             }
-
-            if (!TaskManager.IsProjectNameCorrect(args[2]))
+            
+            if (!int.TryParse(args[2], out var taskId))
             {
                 return new CommandExecutionResult(
                     CommandExecutionStatus.Fail,
-                    "Project name is incorrect.");
+                    "Task Id must be an integer.");
             }
-
+            
             var project = TaskManager.GetInstance().GetProjectById(projectId);
 
             if (project == null)
@@ -37,10 +36,18 @@ namespace TaskManagerCLI.Commands
                     "Project with specified id doesn't exist.");
             }
 
-            project.Name = args[2];
+            var task = TaskManager.GetInstance().GetTaskByIdInProject(project, taskId);
+
+            if (task == null)
+            {
+                return new CommandExecutionResult(CommandExecutionStatus.Fail,
+                    $"Task with specified id doesn't exist in project with id {projectId}");
+            }
+            
+            TaskManager.GetInstance().RemoveTaskFromProject(project, task);
 
             return new CommandExecutionResult(CommandExecutionStatus.OK,
-                "Project name was successfully changed.");
+                "Task was successfully removed.");
         }
     }
 }

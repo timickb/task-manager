@@ -1,6 +1,6 @@
 namespace TaskManagerCLI.Commands
 {
-    public class RemoveUserCommand : ICommand
+    public class RemoveUserCommand : IExecutable
     {
         public string Name => "removeuser";
         public string Usage => "<userName/userId>";

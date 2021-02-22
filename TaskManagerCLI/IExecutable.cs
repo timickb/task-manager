@@ -1,6 +1,6 @@
 namespace TaskManagerCLI
 {
-    public interface ICommand
+    public interface IExecutable
     {
         public string Name { get; }
         public string Usage { get; }

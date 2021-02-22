@@ -2,7 +2,7 @@ using System;
 
 namespace TaskManagerCLI.Commands
 {
-    public class CreateProjectCommand : ICommand
+    public class CreateProjectCommand : IExecutable
     {
         public string Name => "add_project";
         public string Usage => "<projectName>";

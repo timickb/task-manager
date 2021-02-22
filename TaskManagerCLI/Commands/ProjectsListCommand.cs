@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace TaskManagerCLI.Commands
 {
-    public class ProjectsListCommand : ICommand
+    public class ProjectsListCommand : IExecutable
     {
         public string Name => "projects";
         public string Usage => "";

@@ -5,7 +5,7 @@ using TaskManagerAPI;
 
 namespace TaskManagerCLI.Commands
 {
-    public class AddTaskCommand : ICommand
+    public class AddTaskCommand : IExecutable
     {
         public string Name => "add_task";
         public string Usage => "<projectId> <taskType> <taskName>";
