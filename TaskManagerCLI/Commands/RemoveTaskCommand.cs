@@ -28,7 +28,7 @@ namespace TaskManagerCLI.Commands
                     "Task Id must be an integer.");
             }
             
-            var project = TaskManager.GetInstance().GetProjectById(projectId);
+            var project = TaskManagerAPI.TaskManager.GetInstance().GetProjectById(projectId);
 
             if (project == null)
             {
@@ -37,7 +37,7 @@ namespace TaskManagerCLI.Commands
                     "Project with specified id doesn't exist.");
             }
 
-            var task = TaskManager.GetInstance().GetTaskByIdInProject(project, taskId);
+            var task = TaskManagerAPI.TaskManager.GetInstance().GetTaskByIdInProject(project, taskId);
 
             if (task == null)
             {
@@ -45,7 +45,7 @@ namespace TaskManagerCLI.Commands
                     $"Task with specified id doesn't exist in project with id {projectId}");
             }
             
-            TaskManager.GetInstance().RemoveTaskFromProject(project, task);
+            TaskManagerAPI.TaskManager.GetInstance().RemoveTaskFromProject(project, task);
 
             return new CommandExecutionResult(CommandExecutionStatus.OK,
                 "Task was successfully removed.");

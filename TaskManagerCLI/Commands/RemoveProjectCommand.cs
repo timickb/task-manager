@@ -17,7 +17,7 @@ namespace TaskManagerCLI.Commands
                     $"Usage: {Name} {Usage}");
             }
 
-            var tm = TaskManager.GetInstance();
+            var tm = TaskManagerAPI.TaskManager.GetInstance();
 
             Project project = null;
             

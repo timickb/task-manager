@@ -1,10 +1,7 @@
-using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using TaskManagerAPI;
+using TaskManagerCLI;
 
-namespace TaskManagerCLI
+namespace TaskManagerAPI
 {
     /// <summary>
     /// Task Manager :)

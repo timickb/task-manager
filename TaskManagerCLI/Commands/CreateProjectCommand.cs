@@ -17,7 +17,7 @@ namespace TaskManagerCLI.Commands
                     $"Usage: {Name} {Usage}");
             }
             
-            // If name has spaces we should concatenate all args after args[0]
+            // If name has spaces we should concatenate all args after args[1]
             var projectName = args[1];
             for (var i = 2; i < args.Length; i++)
             {
@@ -27,7 +27,7 @@ namespace TaskManagerCLI.Commands
             // Try to add new project.
             try
             {
-                TaskManager.GetInstance().CreateProject(projectName);
+                TaskManagerAPI.TaskManager.GetInstance().CreateProject(projectName);
             }
             catch (ArgumentException e)
             {

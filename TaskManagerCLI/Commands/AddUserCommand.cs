@@ -21,7 +21,7 @@ namespace TaskManagerCLI.Commands
             // Try to add new user.
             try
             {
-                TaskManager.GetInstance().CreateUser(args[1]);
+                TaskManagerAPI.TaskManager.GetInstance().CreateUser(args[1]);
             }
             catch (ArgumentException e)
             {

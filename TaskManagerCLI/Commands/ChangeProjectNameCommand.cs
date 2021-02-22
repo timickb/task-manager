@@ -22,14 +22,14 @@ namespace TaskManagerCLI.Commands
                     "Project Id must be an integer.");
             }
 
-            if (!TaskManager.IsProjectNameCorrect(args[2]))
+            if (!TaskManagerAPI.TaskManager.IsProjectNameCorrect(args[2]))
             {
                 return new CommandExecutionResult(
                     CommandExecutionStatus.Fail,
                     "Project name is incorrect.");
             }
 
-            var project = TaskManager.GetInstance().GetProjectById(projectId);
+            var project = TaskManagerAPI.TaskManager.GetInstance().GetProjectById(projectId);
 
             if (project == null)
             {

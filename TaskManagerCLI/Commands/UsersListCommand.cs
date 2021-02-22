@@ -13,7 +13,7 @@ namespace TaskManagerCLI.Commands
 
         public CommandExecutionResult Run(string[] args)
         {
-            var users = TaskManager.GetInstance().Users;
+            var users = TaskManagerAPI.TaskManager.GetInstance().Users;
 
             if (users.Count == 0)
             {

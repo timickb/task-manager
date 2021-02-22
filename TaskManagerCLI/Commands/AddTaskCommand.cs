@@ -30,9 +30,9 @@ namespace TaskManagerCLI.Commands
                     "Project Id must be an integer.");
             }
 
-            var tm = TaskManager.GetInstance();
+            var tm = TaskManagerAPI.TaskManager.GetInstance();
 
-            var project = TaskManager.GetInstance().GetProjectById(projectId);
+            var project = TaskManagerAPI.TaskManager.GetInstance().GetProjectById(projectId);
 
             if (project == null)
             {
@@ -41,7 +41,7 @@ namespace TaskManagerCLI.Commands
                     "Project with specified id doesn't exist.");
             }
 
-            // If name has spaces we should concatenate all args after args[0]
+            // If name has spaces we should concatenate all args after args[3]
             var taskName = args[3];
             for (var i = 4; i < args.Length; i++)
             {

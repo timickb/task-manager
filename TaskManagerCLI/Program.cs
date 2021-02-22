@@ -16,10 +16,10 @@ namespace TaskManagerCLI
             {
                 //Console.ForegroundColor = ConsoleColor.Gray;
                 Console.Write("> ");
-                userInput = Console.ReadLine();
+                userInput = Console.ReadLine()?.Trim();
                 Console.WriteLine(executor.Execute(userInput));
                 // Save changes after each command.
-                TaskManager.GetInstance().CommitChanges();
+                TaskManagerAPI.TaskManager.GetInstance().CommitChanges();
             } while (userInput != ExitCommand);
 
 

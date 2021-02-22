@@ -20,10 +20,6 @@ namespace TaskManagerAPI
 
         public void RemoveExecutor(User user)
         {
-            if (!Executors.Contains(user))
-            {
-                throw new AssigningException("This user wasn't assigned to this task.");
-            }
             Executors.Remove(user);
         }
 

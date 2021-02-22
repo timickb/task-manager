@@ -2,7 +2,7 @@ namespace TaskManagerCLI.Commands
 {
     public class RemoveUserCommand : IExecutable
     {
-        public string Name => "removeuser";
+        public string Name => "remove_user";
         public string Usage => "<userName/userId>";
 
         public string Description =>
@@ -17,7 +17,7 @@ namespace TaskManagerCLI.Commands
                     $"Usage: {Name} {Usage}");
             }
 
-            var tm = TaskManager.GetInstance();
+            var tm = TaskManagerAPI.TaskManager.GetInstance();
 
             // If arg1 can be integer, find user by id. If not, find it by name.
             var user = int.TryParse(args[1], out var userId) ? tm.GetUserById(userId) : tm.GetUserByName(args[1]);

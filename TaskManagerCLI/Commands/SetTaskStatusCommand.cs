@@ -32,7 +32,7 @@ namespace TaskManagerCLI.Commands
                     "Task Id must be an integer.");
             }
 
-            var project = TaskManager.GetInstance().GetProjectById(projectId);
+            var project = TaskManagerAPI.TaskManager.GetInstance().GetProjectById(projectId);
 
             if (project == null)
             {
@@ -41,7 +41,7 @@ namespace TaskManagerCLI.Commands
                     "Project with specified id doesn't exist.");
             }
 
-            var task = TaskManager.GetInstance().GetTaskByIdInProject(project, taskId);
+            var task = TaskManagerAPI.TaskManager.GetInstance().GetTaskByIdInProject(project, taskId);
 
             if (task == null)
             {
@@ -52,13 +52,13 @@ namespace TaskManagerCLI.Commands
             switch (args[3])
             {
                 case "opened":
-                    TaskManager.GetInstance().SetTaskStatus(task, TaskStatus.Opened);
+                    TaskManagerAPI.TaskManager.GetInstance().SetTaskStatus(task, TaskStatus.Opened);
                     break;
                 case "closed":
-                    TaskManager.GetInstance().SetTaskStatus(task, TaskStatus.Closed);
+                    TaskManagerAPI.TaskManager.GetInstance().SetTaskStatus(task, TaskStatus.Closed);
                     break;
                 case "inProgress":
-                    TaskManager.GetInstance().SetTaskStatus(task, TaskStatus.InProgress);
+                    TaskManagerAPI.TaskManager.GetInstance().SetTaskStatus(task, TaskStatus.InProgress);
                     break;
                 default:
                     return new CommandExecutionResult(CommandExecutionStatus.Fail,

@@ -7,8 +7,7 @@ namespace TaskManagerAPI
 {
     public class StoryTask : Task, IAssignable
     {
-        [JsonProperty("executors")]
-        public List<User> Executors { get; set; }
+        [JsonProperty("executors")] public List<User> Executors { get; set; }
 
         public StoryTask()
         {
@@ -22,25 +21,22 @@ namespace TaskManagerAPI
                 throw new AssigningException("Executors limit for this task exceeded or this user" +
                                              "is already assigned here.");
             }
+
             Executors.Add(user);
         }
 
         public void RemoveExecutor(User user)
         {
-            if (!Executors.Contains(user))
-            {
-                throw new AssigningException("This user wasn't assigned to this task.");
-            }
             Executors.Remove(user);
         }
 
         public override string ToString()
         {
             var result = $"[StoryTask #{Id}] {Name} ({Description}) " +
-                   $"| Created {CreationDate} " +
-                   $"| {Status.ToString()} " +
-                   $"| {Executors.Count} executors: {Environment.NewLine}";
-            return Executors.Aggregate(result, 
+                         $"| Created {CreationDate} " +
+                         $"| {Status.ToString()} " +
+                         $"| {Executors.Count} executors: {Environment.NewLine}";
+            return Executors.Aggregate(result,
                        (current, user) => current + (user + Environment.NewLine))
                    + Environment.NewLine;
         }

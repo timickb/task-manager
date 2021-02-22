@@ -1,9 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using TaskManagerAPI;
 
-namespace TaskManagerCLI
+namespace TaskManagerAPI
 {
     /// <summary>
     /// [Projects] All methods relied to projects.
@@ -12,7 +11,7 @@ namespace TaskManagerCLI
     {
         public Project CreateProject(string name)
         {
-            if (!IsProjectNameCorrect(name))
+            if (!TaskManager.IsProjectNameCorrect(name))
             {
                 throw new ArgumentException("Project name is too long");
             }

@@ -11,7 +11,7 @@ namespace TaskManagerCLI.Commands
 
         public CommandExecutionResult Run(string[] args)
         {
-            var projects = TaskManager.GetInstance().Projects;
+            var projects = TaskManagerAPI.TaskManager.GetInstance().Projects;
 
             if (projects.Count == 0)
             {

@@ -40,7 +40,7 @@ namespace TaskManagerCLI.Commands
                     "User Id must be an integer.");
             }
 
-            var project = TaskManager.GetInstance().GetProjectById(projectId);
+            var project = TaskManagerAPI.TaskManager.GetInstance().GetProjectById(projectId);
 
             if (project == null)
             {
@@ -49,7 +49,7 @@ namespace TaskManagerCLI.Commands
                     "Project with specified id doesn't exist.");
             }
 
-            var task = TaskManager.GetInstance().GetTaskByIdInProject(project, taskId);
+            var task = TaskManagerAPI.TaskManager.GetInstance().GetTaskByIdInProject(project, taskId);
 
             if (task == null)
             {
@@ -57,7 +57,7 @@ namespace TaskManagerCLI.Commands
                     $"Task with specified id doesn't exist in project with id {projectId}");
             }
 
-            var epicTask = TaskManager.GetInstance().GetTaskByIdInProject(project, epicTaskId);
+            var epicTask = TaskManagerAPI.TaskManager.GetInstance().GetTaskByIdInProject(project, epicTaskId);
 
             if (epicTask == null)
             {
@@ -74,7 +74,7 @@ namespace TaskManagerCLI.Commands
 
             try
             {
-                TaskManager.GetInstance().InsertTaskToEpic(project, task as IAssignable, epicTask as EpicTask);
+                TaskManagerAPI.TaskManager.GetInstance().InsertTaskToEpic(project, task as IAssignable, epicTask as EpicTask);
             }
             catch (ArgumentException e)
             {

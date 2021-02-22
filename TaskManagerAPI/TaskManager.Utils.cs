@@ -1,4 +1,4 @@
-namespace TaskManagerCLI
+namespace TaskManagerAPI
 {
     /// <summary>
     /// [Utils] Different useful static methods.

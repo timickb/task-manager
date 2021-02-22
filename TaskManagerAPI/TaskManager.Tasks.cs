@@ -1,16 +1,14 @@
 using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
-using TaskManagerAPI;
 
-namespace TaskManagerCLI
+namespace TaskManagerAPI
 {
     public partial class TaskManager
     {
         public EpicTask CreateEpicTaskInProject(Project project, string taskName)
         {
-            if (!IsProjectNameCorrect(taskName))
+            if (!TaskManager.IsProjectNameCorrect(taskName))
             {
                 throw new ArgumentException("Task name is too long or starts with a digit.");
             }
@@ -34,7 +32,7 @@ namespace TaskManagerCLI
 
         public StoryTask CreateStoryTaskInProject(Project project, string taskName)
         {
-            if (!IsProjectNameCorrect(taskName))
+            if (!TaskManager.IsProjectNameCorrect(taskName))
             {
                 throw new ArgumentException("Task name is too long or starts with a digit.");
             }
@@ -56,7 +54,7 @@ namespace TaskManagerCLI
 
         public SimpleTask CreateSimpleTaskInProject(Project project, string taskName)
         {
-            if (!IsProjectNameCorrect(taskName))
+            if (!TaskManager.IsProjectNameCorrect(taskName))
             {
                 throw new ArgumentException("Task name is too long or starts with a digit.");
             }
@@ -78,7 +76,7 @@ namespace TaskManagerCLI
 
         public BugTask CreateBugTaskInProject(Project project, string taskName)
         {
-            if (!IsProjectNameCorrect(taskName))
+            if (!TaskManager.IsProjectNameCorrect(taskName))
             {
                 throw new ArgumentException("Task name is too long or starts with a digit.");
             }

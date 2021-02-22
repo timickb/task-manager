@@ -1,8 +1,7 @@
 using System;
 using System.Linq;
-using TaskManagerAPI;
 
-namespace TaskManagerCLI
+namespace TaskManagerAPI
 {
     /// <summary>
     /// [User] All methods relied to users.
@@ -18,7 +17,7 @@ namespace TaskManagerCLI
         /// user name length is more than 20 symbols.</exception>
         public User CreateUser(string name)
         {
-            if (!IsUserNameCorrect(name))
+            if (!TaskManager.IsUserNameCorrect(name))
             {
                 throw new ArgumentException("User name is too long or starts with a digit.");
             }

@@ -25,7 +25,7 @@ namespace TaskManagerCLI.Commands
                     "Project Id must be an integer.");
             }
             
-            var project = TaskManager.GetInstance().GetProjectById(projectId);
+            var project = TaskManagerAPI.TaskManager.GetInstance().GetProjectById(projectId);
 
             if (project == null)
             {

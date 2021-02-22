@@ -37,7 +37,7 @@ namespace TaskManagerCLI.Commands
                     "User Id must be an integer.");
             }
             
-            var project = TaskManager.GetInstance().GetProjectById(projectId);
+            var project = TaskManagerAPI.TaskManager.GetInstance().GetProjectById(projectId);
 
             if (project == null)
             {
@@ -46,7 +46,7 @@ namespace TaskManagerCLI.Commands
                     "Project with specified id doesn't exist.");
             }
 
-            var task = TaskManager.GetInstance().GetTaskByIdInProject(project, taskId);
+            var task = TaskManagerAPI.TaskManager.GetInstance().GetTaskByIdInProject(project, taskId);
 
             if (task == null)
             {
@@ -54,7 +54,7 @@ namespace TaskManagerCLI.Commands
                     $"Task with specified id doesn't exist in project with id {projectId}");
             }
 
-            var user = TaskManager.GetInstance().GetUserById(userId);
+            var user = TaskManagerAPI.TaskManager.GetInstance().GetUserById(userId);
             
             if (user == null)
             {
@@ -70,7 +70,7 @@ namespace TaskManagerCLI.Commands
 
             try
             {
-                TaskManager.GetInstance().AssignUserToTask(task as IAssignable, user);
+                TaskManagerAPI.TaskManager.GetInstance().AssignUserToTask(task as IAssignable, user);
             }
             catch (AssigningException e)
             {
