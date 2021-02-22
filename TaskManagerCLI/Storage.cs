@@ -15,7 +15,7 @@ namespace TaskManagerCLI
         /// Path to the directory where the
         /// app data files locate.
         /// </summary>
-        public string DirectoryPath { get; }
+        public string DirectoryPath { get; set; }
 
         public Storage(string path)
         {

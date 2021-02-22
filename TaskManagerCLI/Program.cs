@@ -14,7 +14,7 @@ namespace TaskManagerCLI
             string userInput;
             do
             {
-                Console.ForegroundColor = ConsoleColor.Gray;
+                //Console.ForegroundColor = ConsoleColor.Gray;
                 Console.Write("> ");
                 userInput = Console.ReadLine();
                 Console.WriteLine(executor.Execute(userInput));

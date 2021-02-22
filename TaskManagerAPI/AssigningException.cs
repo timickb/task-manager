@@ -4,6 +4,10 @@ namespace TaskManagerAPI
 {
     public class AssigningException : Exception
     {
-        public override string Message => "Cannot assign this user.";
+        public AssigningException(string message)
+        {
+            Message = message;
+        }
+        public override string Message { get; }
     }
 }

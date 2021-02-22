@@ -20,6 +20,8 @@ namespace TaskManagerCLI
             _commands.Add(new ChangeProjectNameCommand());
             _commands.Add(new AddTaskCommand());
             _commands.Add(new TasksListCommand());
+            _commands.Add(new AddExecutorToTaskCommand());
+            _commands.Add(new RemoveExecutorFromTaskCommand());
         }
 
         /// <summary>

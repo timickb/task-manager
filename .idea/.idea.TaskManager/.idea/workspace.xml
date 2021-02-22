@@ -23,22 +23,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="123defad-be63-4d47-85f6-607e86c4706b" name="Default Changelist" comment="/add_task">
-      <change afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/RemoveTaskCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/TasksListCommand.cs" afterDir="false" />
+    <list default="true" id="123defad-be63-4d47-85f6-607e86c4706b" name="Default Changelist" comment="/add_task, /tasks (list)">
+      <change afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/AddExecutorToTaskCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/RemoveExecutorFromTaskCommand.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskManagerAPI/AssigningException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerAPI/AssigningException.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskManagerAPI/BugTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerAPI/BugTask.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskManagerAPI/SimpleTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerAPI/SimpleTask.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskManagerAPI/StoryTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerAPI/StoryTask.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskManagerCLI/CommandExecutor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/CommandExecutor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Commands/AddTaskCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/AddTaskCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Commands/AddUserCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/AddUserCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Commands/ChangeProjectNameCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/ChangeProjectNameCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Commands/CreateProjectCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/CreateProjectCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Commands/ProjectsListCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/ProjectsListCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Commands/RemoveProjectCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/RemoveProjectCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Commands/RemoveUserCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/RemoveUserCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Commands/UsersListCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/UsersListCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/ICommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/IExecutable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Tasks.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Tasks.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Settings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Storage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Storage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +58,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/TaskManager/TaskStatus.cs" />
-        <option value="$PROJECT_DIR$/TaskManager/Task.cs" />
         <option value="$PROJECT_DIR$/TaskManager/TaskBug.cs" />
         <option value="$PROJECT_DIR$/TaskManager/TaskSimple.cs" />
         <option value="$PROJECT_DIR$/TaskManager/TaskStory.cs" />
@@ -84,16 +80,9 @@
         <option value="$PROJECT_DIR$/TaskManagerLib/StoryTask.cs" />
         <option value="$PROJECT_DIR$/TaskManagerAPI/EpicTask.cs" />
         <option value="$PROJECT_DIR$/TaskManagerAPI/Task.cs" />
-        <option value="$PROJECT_DIR$/TaskManagerAPI/AssigningException.cs" />
-        <option value="$PROJECT_DIR$/TaskManagerAPI/StoryTask.cs" />
-        <option value="$PROJECT_DIR$/TaskManagerAPI/SimpleTask.cs" />
-        <option value="$PROJECT_DIR$/TaskManagerAPI/BugTask.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/Settings.cs" />
-        <option value="$PROJECT_DIR$/TaskManagerCLI/Storage.cs" />
         <option value="$PROJECT_DIR$/TaskManagerAPI/Project.cs" />
-        <option value="$PROJECT_DIR$/TaskManagerCLI/Program.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/AddUserCommand.cs" />
-        <option value="$PROJECT_DIR$/TaskManagerCLI/TaskManager.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Utils.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Users.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/RemoveUserCommand.cs" />
@@ -105,12 +94,21 @@
         <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/ChangeProjectNameCommand.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/TaskManager.tasks.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/AddTaskCommand.cs" />
-        <option value="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Tasks.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/RemoveTaskCommand.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/ICommand.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/IExecutable.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/TasksListCommand.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Tasks.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerCLI/Storage.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerCLI/TaskManager.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/AddExecutorToTaskCommand.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerCLI/Program.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/CommandExecutor.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/RemoveExecutorFromTaskCommand.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerAPI/AssigningException.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerAPI/BugTask.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerAPI/SimpleTask.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerAPI/StoryTask.cs" />
       </list>
     </option>
   </component>
@@ -120,6 +118,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.350137" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30027398" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -185,7 +185,7 @@
       <workItem from="1613487789485" duration="3800000" />
       <workItem from="1613591120033" duration="1778000" />
       <workItem from="1613845492304" duration="687000" />
-      <workItem from="1613934252796" duration="14510000" />
+      <workItem from="1613934252796" duration="16729000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1613231868880</created>
@@ -306,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614004591302</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="/add_task, /tasks (list)">
+      <created>1614006976867</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1614006976867</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,37 +352,102 @@
     <MESSAGE value="/add_project, /remove_project, /projects" />
     <MESSAGE value="/change_project_name" />
     <MESSAGE value="/add_task" />
-    <option name="LAST_COMMIT_MESSAGE" value="/add_task" />
+    <MESSAGE value="/add_task, /tasks (list)" />
+    <option name="LAST_COMMIT_MESSAGE" value="/add_task, /tasks (list)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="620" y="282" width="669" height="445" key="#Notifications" timestamp="1613314424182">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="620" y="282" width="669" height="445" key="#Notifications/0.0.1920.1080@0.0.1920.1080" timestamp="1613314424182" />
-    <state width="1864" height="542" key="GridCell.Tab.0.bottom" timestamp="1614004576639">
+    <state width="1864" height="542" key="GridCell.Tab.0.bottom" timestamp="1614009564172">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="542" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1614004576639" />
-    <state width="1864" height="542" key="GridCell.Tab.0.center" timestamp="1614004576637">
+    <state width="1864" height="542" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1614009564172" />
+    <state width="1864" height="542" key="GridCell.Tab.0.center" timestamp="1614009564171">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="542" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1614004576637" />
-    <state width="1864" height="542" key="GridCell.Tab.0.left" timestamp="1614004576636">
+    <state width="1864" height="542" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1614009564171" />
+    <state width="1864" height="542" key="GridCell.Tab.0.left" timestamp="1614009564171">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="542" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1614004576636" />
-    <state width="1864" height="542" key="GridCell.Tab.0.right" timestamp="1614004576638">
+    <state width="1864" height="542" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1614009564171" />
+    <state width="1864" height="542" key="GridCell.Tab.0.right" timestamp="1614009564171">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="542" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1614004576638" />
+    <state width="1864" height="542" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1614009564171" />
+    <state width="1864" height="369" key="GridCell.Tab.1.bottom" timestamp="1614008898142">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1864" height="369" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898142" />
+    <state width="1864" height="369" key="GridCell.Tab.1.center" timestamp="1614008898142">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1864" height="369" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898141" />
+    <state width="1864" height="369" key="GridCell.Tab.1.left" timestamp="1614008898141">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1864" height="369" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898141" />
+    <state width="1864" height="369" key="GridCell.Tab.1.right" timestamp="1614008898142">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1864" height="369" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898142" />
+    <state width="1864" height="369" key="GridCell.Tab.2.bottom" timestamp="1614008898142">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1864" height="369" key="GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898142" />
+    <state width="1864" height="369" key="GridCell.Tab.2.center" timestamp="1614008898142">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1864" height="369" key="GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898142" />
+    <state width="1864" height="369" key="GridCell.Tab.2.left" timestamp="1614008898142">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1864" height="369" key="GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898142" />
+    <state width="1864" height="369" key="GridCell.Tab.2.right" timestamp="1614008898142">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1864" height="369" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898142" />
+    <state width="1864" height="369" key="GridCell.Tab.3.bottom" timestamp="1614008898143">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1864" height="369" key="GridCell.Tab.3.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898143" />
+    <state width="1864" height="369" key="GridCell.Tab.3.center" timestamp="1614008898143">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1864" height="369" key="GridCell.Tab.3.center/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898143" />
+    <state width="1864" height="369" key="GridCell.Tab.3.left" timestamp="1614008898143">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1864" height="369" key="GridCell.Tab.3.left/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898143" />
+    <state width="1864" height="369" key="GridCell.Tab.3.right" timestamp="1614008898143">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1864" height="369" key="GridCell.Tab.3.right/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898143" />
+    <state width="1864" height="369" key="GridCell.Tab.4.bottom" timestamp="1614008898144">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1864" height="369" key="GridCell.Tab.4.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898144" />
+    <state width="1864" height="369" key="GridCell.Tab.4.center" timestamp="1614008898144">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1864" height="369" key="GridCell.Tab.4.center/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898144" />
+    <state width="1864" height="369" key="GridCell.Tab.4.left" timestamp="1614008898143">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1864" height="369" key="GridCell.Tab.4.left/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898143" />
+    <state width="1864" height="369" key="GridCell.Tab.4.right" timestamp="1614008898144">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1864" height="369" key="GridCell.Tab.4.right/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898144" />
     <state x="455" y="59" width="1000" height="663" key="Rider.ProjectTemplateDialog.Size" timestamp="1613229725600">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="455" y="59" width="1000" height="663" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1080@0.0.1920.1080" timestamp="1613229725600" />
-    <state x="729" y="-253" width="452" height="827" key="RiderGenerateDialog" timestamp="1614006350425">
+    <state x="729" y="-325" width="452" height="827" key="RiderGenerateDialog" timestamp="1614009028289">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="729" y="-253" width="452" height="827" key="RiderGenerateDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1614006350425" />
+    <state x="729" y="-325" width="452" height="827" key="RiderGenerateDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1614009028289" />
     <state x="0" y="-72" width="1920" height="1104" key="SettingsEditor" timestamp="1614006092577">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -388,10 +460,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="960" y="11" width="960" height="1069" key="VCS.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1613993960375" />
-    <state x="455" y="-378" width="1000" height="696" key="Vcs.Push.Dialog.v2" timestamp="1614004594063">
+    <state x="455" y="-402" width="1000" height="696" key="Vcs.Push.Dialog.v2" timestamp="1614006979139">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="455" y="-378" width="1000" height="696" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1614004594063" />
+    <state x="455" y="-402" width="1000" height="696" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1614006979139" />
     <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1613314532474">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

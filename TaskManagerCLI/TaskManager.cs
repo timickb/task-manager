@@ -15,7 +15,6 @@ namespace TaskManagerCLI
 
         private TaskManager()
         {
-            _settings = new Settings();
             _storage = new Storage("./");
 
             Users = _storage.ReadUsers();
@@ -28,12 +27,20 @@ namespace TaskManagerCLI
         }
         
         
-
-        private readonly Settings _settings;
         private readonly Storage _storage;
 
         public List<User> Users { get; }
         public List<Project> Projects { get; }
+        
+        /// <summary>
+        /// An opportunity to change the app data
+        /// folder path externally.
+        /// </summary>
+        public string StorageFolderPath
+        {
+            get => _storage.DirectoryPath;
+            set => _storage.DirectoryPath = value;
+        }
 
         /// <summary>
         /// Simple method that allows to save

@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace TaskManagerAPI
 {
@@ -9,7 +11,8 @@ namespace TaskManagerAPI
         {
             if (Executors.Count > 0 || Executors.Contains(user))
             {
-                throw new AssigningException();
+                throw new AssigningException("Executors limit for this task exceeded or this user" +
+                                             "is already assigned here.");
             }
 
             Executors.Add(user);
@@ -17,15 +20,22 @@ namespace TaskManagerAPI
 
         public void RemoveExecutor(User user)
         {
+            if (!Executors.Contains(user))
+            {
+                throw new AssigningException("This user wasn't assigned to this task.");
+            }
             Executors.Remove(user);
         }
 
         public override string ToString()
         {
-            return $"[SimpleTask #{Id}] {Name} ({Description})" +
+            var result = $"[SimpleTask #{Id}] {Name} ({Description})" +
                    $"| created {CreationDate} " +
                    $"| {Status.ToString()}" +
-                   $"| {Executors.Count} executors";
+                   $"| {Executors.Count} executors: {Environment.NewLine}";
+            return Executors.Aggregate(result, 
+                       (current, user) => current + (user + Environment.NewLine))
+                   + Environment.NewLine;
         }
     }
 }
