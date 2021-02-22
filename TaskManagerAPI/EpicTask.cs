@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using Newtonsoft.Json;
 
 namespace TaskManagerAPI
@@ -13,8 +15,11 @@ namespace TaskManagerAPI
 
         public override string ToString()
         {
-            return $"[EpicTask #{Id}] {Name} ({Description}) | created {CreationDate} | " +
-                   $"{Status.ToString()} | {StoryTasks.Count + SimpleTasks.Count} connected subtasks.";
+            var result = $"[EpicTask #{Id}] {Name} ({Description}) | created {CreationDate} | " +
+                         $"{Status.ToString()} | {StoryTasks.Count + SimpleTasks.Count} connected subtasks: ";
+            result = SimpleTasks.Aggregate(result, (current, task) => current + (task.Id + ", "));
+            result = StoryTasks.Aggregate(result, (current, task) => current + (task.Id + ", "));
+            return result + Environment.NewLine;
         }
     }
 }

@@ -39,7 +39,7 @@ namespace TaskManagerCLI.Commands
                     $"There are no tasks in project with id {projectId}");
             }
 
-            var result = $"There are {tasks.Count} tasks in project:";
+            var result = $"There are {tasks.Count} tasks in project: {Environment.NewLine}";
             // Sorting by status.
             result = tasks.Where(t => t.Status == TaskStatus.Opened).Aggregate(result, (current, task) => current + (task + Environment.NewLine));
             result = tasks.Where(t => t.Status == TaskStatus.InProgress).Aggregate(result, (current, task) => current + (task + Environment.NewLine));

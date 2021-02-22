@@ -10,18 +10,23 @@ namespace TaskManagerCLI
 
         public CommandExecutor()
         {
-            _commands = new List<IExecutable>();
-            _commands.Add(new AddUserCommand());
-            _commands.Add(new RemoveUserCommand());
-            _commands.Add(new UsersListCommand());
-            _commands.Add(new CreateProjectCommand());
-            _commands.Add(new RemoveProjectCommand());
-            _commands.Add(new ProjectsListCommand());
-            _commands.Add(new ChangeProjectNameCommand());
-            _commands.Add(new AddTaskCommand());
-            _commands.Add(new TasksListCommand());
-            _commands.Add(new AddExecutorToTaskCommand());
-            _commands.Add(new RemoveExecutorFromTaskCommand());
+            _commands = new List<IExecutable>
+            {
+                new AddUserCommand(),
+                new RemoveUserCommand(),
+                new UsersListCommand(),
+                new CreateProjectCommand(),
+                new RemoveProjectCommand(),
+                new ProjectsListCommand(),
+                new ChangeProjectNameCommand(),
+                new AddTaskCommand(),
+                new TasksListCommand(),
+                new AddExecutorToTaskCommand(),
+                new RemoveExecutorFromTaskCommand(),
+                new SetTaskStatusCommand(),
+                new InsertTaskToEpicCommand(),
+                new RemoveTaskFromEpicCommand()
+            };
         }
 
         /// <summary>
@@ -43,8 +48,6 @@ namespace TaskManagerCLI
             return commandName == Program.ExitCommand
                 ? CommandExecutionResult.ExitCommand
                 : CommandExecutionResult.UnknownCommand;
-
-            // If command "commandName" wasn't found, execute the default command.
         }
     }
 }

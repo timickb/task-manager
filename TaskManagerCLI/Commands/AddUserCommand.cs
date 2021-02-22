@@ -5,7 +5,7 @@ namespace TaskManagerCLI.Commands
 {
     public class AddUserCommand : IExecutable
     {
-        public string Name => "adduser";
+        public string Name => "add_user";
         public string Usage => "<userName>";
 
         public CommandExecutionResult Run(string[] args)

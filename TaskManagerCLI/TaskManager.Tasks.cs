@@ -143,6 +143,61 @@ namespace TaskManagerCLI
         public void RemoveTaskFromProject(Project project, Task task)
         {
             project.Tasks.Remove(task);
+
+            // Check epic tasks and remove it also from them.
+            if (task is BugTask) return;
+            
+            foreach(var _task in project.Tasks)
+            {
+                if (_task is EpicTask epicTask)
+                {
+                    switch (task)
+                    {
+                        case SimpleTask spt:
+                            epicTask.SimpleTasks.Remove(spt);
+                            break;
+                        case StoryTask stt:
+                            epicTask.StoryTasks.Remove(stt);
+                            break;
+                    }
+                }
+            }
         }
+
+        public void InsertTaskToEpic(Project project, IAssignable task, EpicTask epicTask)
+        {
+            switch (task)
+            {
+                case BugTask _:
+                    throw new ArgumentException("Unable to insert bug task to the epic task.");
+                case SimpleTask simple:
+                    epicTask.SimpleTasks.Add(simple);
+                    break;
+                case StoryTask story:
+                    epicTask.StoryTasks.Add(story);
+                    break;
+                default:
+                    throw new ArgumentException("Invalid task.");
+            }
+        }
+        
+        public void RemoveTaskFromEpic(Project project, IAssignable task, EpicTask epicTask)
+        {
+            switch (task)
+            {
+                case BugTask _:
+                    throw new ArgumentException("Unable to remove bug task from the epic task.");
+                case SimpleTask simple when epicTask.SimpleTasks.Contains(simple):
+                    epicTask.SimpleTasks.Remove(simple);
+                    break;
+                case StoryTask story when epicTask.StoryTasks.Contains(story):
+                    epicTask.StoryTasks.Remove(story);
+                    break;
+                default:
+                    throw new ArgumentException("This task wasn't located in this story task.");
+            }
+            
+        }
+        
     }
 }
