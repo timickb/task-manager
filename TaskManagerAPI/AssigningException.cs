@@ -4,6 +4,6 @@ namespace TaskManagerAPI
 {
     public class AssigningException : Exception
     {
-        public override string Message => "This task can have only one executor.";
+        public override string Message => "Cannot assign this user.";
     }
 }

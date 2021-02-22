@@ -18,8 +18,7 @@ namespace TaskManagerCLI
             
             Users = new List<User>();
             Projects = new List<Project>();
-            
-            
+
         }
         
         public static TaskManager GetInstance()

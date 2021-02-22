@@ -37,13 +37,9 @@
         <e p="ICommand.cs" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="Settings.cs" t="Include" />
-        <e p="TaskManager.Projects.cs" t="Include" />
-        <e p="TaskManager.Tasks.cs" t="Include" />
-        <e p="TaskManager.Users.cs" t="Include" />
-        <e p="TaskManager.Utils.cs" t="Include" />
+        <e p="Storage.cs" t="Include" />
         <e p="TaskManager.cs" t="Include" />
         <e p="TaskManagerCLI.csproj" t="IncludeRecursive" />
-        <e p="Utils.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">

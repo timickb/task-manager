@@ -17,7 +17,7 @@ namespace TaskManagerCLI.Commands
             }
 
             var userName = args[1];
-            if (!Utils.IsUserNameCorrect(args[1]))
+            if (false/*!Utils.IsUserNameCorrect(args[1])*/)
             {
                 return new CommandExecutionResult(
                     CommandExecutionStatus.Fail,
@@ -27,7 +27,7 @@ namespace TaskManagerCLI.Commands
             // If everything is OK - add this user.
             TaskManager.GetInstance().Users.Add(new User
             {
-                Id = Utils.GetNextUserId(),
+                Id = 0/*Utils.GetNextUserId()*/,
                 Name = args[1]
             });
             
