@@ -23,20 +23,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="123defad-be63-4d47-85f6-607e86c4706b" name="Default Changelist" comment="/add_task, /tasks (list)">
-      <change afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/AddExecutorToTaskCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/RemoveExecutorFromTaskCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="123defad-be63-4d47-85f6-607e86c4706b" name="Default Changelist" comment="/add_executor, /remove_executor">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerAPI/AssigningException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerAPI/AssigningException.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerAPI/BugTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerAPI/BugTask.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerAPI/SimpleTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerAPI/SimpleTask.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerAPI/StoryTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerAPI/StoryTask.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/CommandExecutor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/CommandExecutor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Settings.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Storage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Storage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,9 +94,9 @@
         <option value="$PROJECT_DIR$/TaskManagerCLI/CommandExecutor.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/RemoveExecutorFromTaskCommand.cs" />
         <option value="$PROJECT_DIR$/TaskManagerAPI/AssigningException.cs" />
-        <option value="$PROJECT_DIR$/TaskManagerAPI/BugTask.cs" />
         <option value="$PROJECT_DIR$/TaskManagerAPI/SimpleTask.cs" />
         <option value="$PROJECT_DIR$/TaskManagerAPI/StoryTask.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerAPI/BugTask.cs" />
       </list>
     </option>
   </component>
@@ -185,7 +173,7 @@
       <workItem from="1613487789485" duration="3800000" />
       <workItem from="1613591120033" duration="1778000" />
       <workItem from="1613845492304" duration="687000" />
-      <workItem from="1613934252796" duration="16729000" />
+      <workItem from="1613934252796" duration="17464000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1613231868880</created>
@@ -313,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614006976867</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="/add_executor, /remove_executor">
+      <created>1614009909304</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1614009909304</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,29 +348,30 @@
     <MESSAGE value="/change_project_name" />
     <MESSAGE value="/add_task" />
     <MESSAGE value="/add_task, /tasks (list)" />
-    <option name="LAST_COMMIT_MESSAGE" value="/add_task, /tasks (list)" />
+    <MESSAGE value="/add_executor, /remove_executor" />
+    <option name="LAST_COMMIT_MESSAGE" value="/add_executor, /remove_executor" />
   </component>
   <component name="WindowStateProjectService">
     <state x="620" y="282" width="669" height="445" key="#Notifications" timestamp="1613314424182">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="620" y="282" width="669" height="445" key="#Notifications/0.0.1920.1080@0.0.1920.1080" timestamp="1613314424182" />
-    <state width="1864" height="542" key="GridCell.Tab.0.bottom" timestamp="1614009564172">
+    <state width="1864" height="542" key="GridCell.Tab.0.bottom" timestamp="1614009894582">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="542" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1614009564172" />
-    <state width="1864" height="542" key="GridCell.Tab.0.center" timestamp="1614009564171">
+    <state width="1864" height="542" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1614009894582" />
+    <state width="1864" height="542" key="GridCell.Tab.0.center" timestamp="1614009894581">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="542" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1614009564171" />
-    <state width="1864" height="542" key="GridCell.Tab.0.left" timestamp="1614009564171">
+    <state width="1864" height="542" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1614009894581" />
+    <state width="1864" height="542" key="GridCell.Tab.0.left" timestamp="1614009894580">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="542" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1614009564171" />
-    <state width="1864" height="542" key="GridCell.Tab.0.right" timestamp="1614009564171">
+    <state width="1864" height="542" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1614009894580" />
+    <state width="1864" height="542" key="GridCell.Tab.0.right" timestamp="1614009894581">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="542" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1614009564171" />
+    <state width="1864" height="542" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1614009894581" />
     <state width="1864" height="369" key="GridCell.Tab.1.bottom" timestamp="1614008898142">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -460,10 +456,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="960" y="11" width="960" height="1069" key="VCS.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1613993960375" />
-    <state x="455" y="-402" width="1000" height="696" key="Vcs.Push.Dialog.v2" timestamp="1614006979139">
+    <state x="455" y="-426" width="1000" height="696" key="Vcs.Push.Dialog.v2" timestamp="1614009911345">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="455" y="-402" width="1000" height="696" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1614006979139" />
+    <state x="455" y="-426" width="1000" height="696" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1614009911345" />
     <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1613314532474">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

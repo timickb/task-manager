@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using TaskManagerAPI;
 
 namespace TaskManagerCLI.Commands
 {
@@ -37,10 +38,13 @@ namespace TaskManagerCLI.Commands
                 return new CommandExecutionResult(CommandExecutionStatus.OK,
                     $"There are no tasks in project with id {projectId}");
             }
-            
-            var result = $"There are {tasks.Count} tasks in project:" + Environment.NewLine +
-                         tasks.Aggregate(string.Empty, (current, user) => current + (user + Environment.NewLine));
-            
+
+            var result = $"There are {tasks.Count} tasks in project:";
+            // Sorting by status.
+            result = tasks.Where(t => t.Status == TaskStatus.Opened).Aggregate(result, (current, task) => current + (task + Environment.NewLine));
+            result = tasks.Where(t => t.Status == TaskStatus.InProgress).Aggregate(result, (current, task) => current + (task + Environment.NewLine));
+            result = tasks.Where(t => t.Status == TaskStatus.Closed).Aggregate(result, (current, task) => current + (task + Environment.NewLine));
+
             return new CommandExecutionResult(CommandExecutionStatus.OK, result);
 
         }
