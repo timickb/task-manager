@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace TaskManagerAPI
 {
-    public abstract class Task
+    public class Task
     {
         [JsonProperty("id")]
         public int Id { get; set; }

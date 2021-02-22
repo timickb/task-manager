@@ -18,6 +18,8 @@ namespace TaskManagerCLI
                 Console.Write("> ");
                 userInput = Console.ReadLine();
                 Console.WriteLine(executor.Execute(userInput));
+                // Save changes after each command.
+                TaskManager.GetInstance().CommitChanges();
             } while (userInput != ExitCommand);
 
 

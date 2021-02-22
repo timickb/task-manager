@@ -23,15 +23,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="123defad-be63-4d47-85f6-607e86c4706b" name="Default Changelist" comment="Tasks by status sorting">
-      <change afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/InsertTaskToEpicCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/RemoveTaskFromEpicCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/SetTaskStatusCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="123defad-be63-4d47-85f6-607e86c4706b" name="Default Changelist" comment="/insert_task_to_epic, /remove_task_from_epic">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/CommandExecutor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/CommandExecutor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Commands/AddUserCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/AddUserCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Commands/TasksListCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/TasksListCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskManagerAPI/Task.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerAPI/Task.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskManagerAPI/TaskStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerAPI/TaskStatus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Storage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Storage.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Tasks.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Tasks.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +51,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/TaskManager/TaskEpic.cs" />
         <option value="$PROJECT_DIR$/TaskManager/User.cs" />
         <option value="$PROJECT_DIR$/TaskManagerLib/Class1.cs" />
         <option value="$PROJECT_DIR$/TaskManagerLib/TaskStatus.cs" />
@@ -71,8 +67,6 @@
         <option value="$PROJECT_DIR$/TaskManagerLib/EpicTask.cs" />
         <option value="$PROJECT_DIR$/TaskManagerLib/User.cs" />
         <option value="$PROJECT_DIR$/TaskManagerLib/StoryTask.cs" />
-        <option value="$PROJECT_DIR$/TaskManagerAPI/EpicTask.cs" />
-        <option value="$PROJECT_DIR$/TaskManagerAPI/Task.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/Settings.cs" />
         <option value="$PROJECT_DIR$/TaskManagerAPI/Project.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Utils.cs" />
@@ -89,10 +83,8 @@
         <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/RemoveTaskCommand.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/ICommand.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/IExecutable.cs" />
-        <option value="$PROJECT_DIR$/TaskManagerCLI/Storage.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/TaskManager.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/AddExecutorToTaskCommand.cs" />
-        <option value="$PROJECT_DIR$/TaskManagerCLI/Program.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/RemoveExecutorFromTaskCommand.cs" />
         <option value="$PROJECT_DIR$/TaskManagerAPI/AssigningException.cs" />
         <option value="$PROJECT_DIR$/TaskManagerAPI/SimpleTask.cs" />
@@ -104,6 +96,11 @@
         <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/AddUserCommand.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/InsertTaskToEpicCommand.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/RemoveTaskFromEpicCommand.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerAPI/EpicTask.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerCLI/Program.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerAPI/Task.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerAPI/TaskStatus.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerCLI/Storage.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Tasks.cs" />
       </list>
     </option>
@@ -181,7 +178,7 @@
       <workItem from="1613487789485" duration="3800000" />
       <workItem from="1613591120033" duration="1778000" />
       <workItem from="1613845492304" duration="687000" />
-      <workItem from="1613934252796" duration="21104000" />
+      <workItem from="1613934252796" duration="24142000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1613231868880</created>
@@ -323,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614010609471</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="/insert_task_to_epic, /remove_task_from_epic">
+      <created>1614014973577</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1614014973577</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,93 +369,94 @@
     <MESSAGE value="/add_task, /tasks (list)" />
     <MESSAGE value="/add_executor, /remove_executor" />
     <MESSAGE value="Tasks by status sorting" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tasks by status sorting" />
+    <MESSAGE value="/insert_task_to_epic, /remove_task_from_epic" />
+    <option name="LAST_COMMIT_MESSAGE" value="/insert_task_to_epic, /remove_task_from_epic" />
   </component>
   <component name="WindowStateProjectService">
     <state x="620" y="282" width="669" height="445" key="#Notifications" timestamp="1613314424182">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="620" y="282" width="669" height="445" key="#Notifications/0.0.1920.1080@0.0.1920.1080" timestamp="1613314424182" />
-    <state width="1864" height="542" key="GridCell.Tab.0.bottom" timestamp="1614014678350">
+    <state width="1864" height="621" key="GridCell.Tab.0.bottom" timestamp="1614018520624">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="542" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1614014678350" />
-    <state width="1864" height="542" key="GridCell.Tab.0.center" timestamp="1614014678348">
+    <state width="1864" height="621" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1614018520624" />
+    <state width="1864" height="621" key="GridCell.Tab.0.center" timestamp="1614018520622">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="542" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1614014678348" />
-    <state width="1864" height="542" key="GridCell.Tab.0.left" timestamp="1614014678347">
+    <state width="1864" height="621" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1614018520622" />
+    <state width="1864" height="621" key="GridCell.Tab.0.left" timestamp="1614018520620">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="542" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1614014678347" />
-    <state width="1864" height="542" key="GridCell.Tab.0.right" timestamp="1614014678349">
+    <state width="1864" height="621" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1614018520620" />
+    <state width="1864" height="621" key="GridCell.Tab.0.right" timestamp="1614018520623">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="542" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1614014678349" />
-    <state width="1864" height="369" key="GridCell.Tab.1.bottom" timestamp="1614008898142">
+    <state width="1864" height="621" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1614018520623" />
+    <state width="1864" height="621" key="GridCell.Tab.1.bottom" timestamp="1614018520628">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="369" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898142" />
-    <state width="1864" height="369" key="GridCell.Tab.1.center" timestamp="1614008898142">
+    <state width="1864" height="621" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1614018520628" />
+    <state width="1864" height="621" key="GridCell.Tab.1.center" timestamp="1614018520626">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="369" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898141" />
-    <state width="1864" height="369" key="GridCell.Tab.1.left" timestamp="1614008898141">
+    <state width="1864" height="621" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1614018520626" />
+    <state width="1864" height="621" key="GridCell.Tab.1.left" timestamp="1614018520625">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="369" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898141" />
-    <state width="1864" height="369" key="GridCell.Tab.1.right" timestamp="1614008898142">
+    <state width="1864" height="621" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1614018520625" />
+    <state width="1864" height="621" key="GridCell.Tab.1.right" timestamp="1614018520627">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="369" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898142" />
-    <state width="1864" height="369" key="GridCell.Tab.2.bottom" timestamp="1614008898142">
+    <state width="1864" height="621" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1614018520627" />
+    <state width="1864" height="621" key="GridCell.Tab.2.bottom" timestamp="1614018520631">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="369" key="GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898142" />
-    <state width="1864" height="369" key="GridCell.Tab.2.center" timestamp="1614008898142">
+    <state width="1864" height="621" key="GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1614018520631" />
+    <state width="1864" height="621" key="GridCell.Tab.2.center" timestamp="1614018520630">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="369" key="GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898142" />
-    <state width="1864" height="369" key="GridCell.Tab.2.left" timestamp="1614008898142">
+    <state width="1864" height="621" key="GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080" timestamp="1614018520630" />
+    <state width="1864" height="621" key="GridCell.Tab.2.left" timestamp="1614018520629">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="369" key="GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898142" />
-    <state width="1864" height="369" key="GridCell.Tab.2.right" timestamp="1614008898142">
+    <state width="1864" height="621" key="GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080" timestamp="1614018520629" />
+    <state width="1864" height="621" key="GridCell.Tab.2.right" timestamp="1614018520630">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="369" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898142" />
-    <state width="1864" height="369" key="GridCell.Tab.3.bottom" timestamp="1614008898143">
+    <state width="1864" height="621" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1614018520630" />
+    <state width="1864" height="621" key="GridCell.Tab.3.bottom" timestamp="1614018520634">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="369" key="GridCell.Tab.3.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898143" />
-    <state width="1864" height="369" key="GridCell.Tab.3.center" timestamp="1614008898143">
+    <state width="1864" height="621" key="GridCell.Tab.3.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1614018520634" />
+    <state width="1864" height="621" key="GridCell.Tab.3.center" timestamp="1614018520632">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="369" key="GridCell.Tab.3.center/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898143" />
-    <state width="1864" height="369" key="GridCell.Tab.3.left" timestamp="1614008898143">
+    <state width="1864" height="621" key="GridCell.Tab.3.center/0.0.1920.1080@0.0.1920.1080" timestamp="1614018520632" />
+    <state width="1864" height="621" key="GridCell.Tab.3.left" timestamp="1614018520632">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="369" key="GridCell.Tab.3.left/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898143" />
-    <state width="1864" height="369" key="GridCell.Tab.3.right" timestamp="1614008898143">
+    <state width="1864" height="621" key="GridCell.Tab.3.left/0.0.1920.1080@0.0.1920.1080" timestamp="1614018520632" />
+    <state width="1864" height="621" key="GridCell.Tab.3.right" timestamp="1614018520633">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="369" key="GridCell.Tab.3.right/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898143" />
-    <state width="1864" height="369" key="GridCell.Tab.4.bottom" timestamp="1614008898144">
+    <state width="1864" height="621" key="GridCell.Tab.3.right/0.0.1920.1080@0.0.1920.1080" timestamp="1614018520633" />
+    <state width="1864" height="621" key="GridCell.Tab.4.bottom" timestamp="1614018520636">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="369" key="GridCell.Tab.4.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898144" />
-    <state width="1864" height="369" key="GridCell.Tab.4.center" timestamp="1614008898144">
+    <state width="1864" height="621" key="GridCell.Tab.4.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1614018520636" />
+    <state width="1864" height="621" key="GridCell.Tab.4.center" timestamp="1614018520635">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="369" key="GridCell.Tab.4.center/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898144" />
-    <state width="1864" height="369" key="GridCell.Tab.4.left" timestamp="1614008898143">
+    <state width="1864" height="621" key="GridCell.Tab.4.center/0.0.1920.1080@0.0.1920.1080" timestamp="1614018520635" />
+    <state width="1864" height="621" key="GridCell.Tab.4.left" timestamp="1614018520635">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="369" key="GridCell.Tab.4.left/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898143" />
-    <state width="1864" height="369" key="GridCell.Tab.4.right" timestamp="1614008898144">
+    <state width="1864" height="621" key="GridCell.Tab.4.left/0.0.1920.1080@0.0.1920.1080" timestamp="1614018520635" />
+    <state width="1864" height="621" key="GridCell.Tab.4.right" timestamp="1614018520636">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="369" key="GridCell.Tab.4.right/0.0.1920.1080@0.0.1920.1080" timestamp="1614008898144" />
+    <state width="1864" height="621" key="GridCell.Tab.4.right/0.0.1920.1080@0.0.1920.1080" timestamp="1614018520636" />
     <state x="455" y="59" width="1000" height="663" key="Rider.ProjectTemplateDialog.Size" timestamp="1613229725600">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -472,10 +477,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="960" y="11" width="960" height="1069" key="VCS.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1613993960375" />
-    <state x="455" y="-450" width="1000" height="696" key="Vcs.Push.Dialog.v2" timestamp="1614010628288">
+    <state x="455" y="-474" width="1000" height="696" key="Vcs.Push.Dialog.v2" timestamp="1614014976473">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="455" y="-450" width="1000" height="696" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1614010628288" />
+    <state x="455" y="-474" width="1000" height="696" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1614014976473" />
     <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1613314532474">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

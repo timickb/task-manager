@@ -22,7 +22,8 @@ namespace TaskManagerCLI
                 Id = nextId,
                 Name = taskName,
                 StoryTasks = new List<StoryTask>(),
-                SimpleTasks =  new List<SimpleTask>()
+                SimpleTasks =  new List<SimpleTask>(),
+                CreationDate = DateTime.Now
             };
             
             project.Tasks.Add(epicTask);
@@ -44,7 +45,8 @@ namespace TaskManagerCLI
             {
                 Id = nextId,
                 Name = taskName,
-                Executors = new List<User>()
+                Executors = new List<User>(),
+                CreationDate = DateTime.Now
             };
             
             project.Tasks.Add(storyTask);
@@ -65,7 +67,8 @@ namespace TaskManagerCLI
             {
                 Id = nextId,
                 Name = taskName,
-                Executors = new List<User>()
+                Executors = new List<User>(),
+                CreationDate = DateTime.Now
             };
             
             project.Tasks.Add(simpleTask);
@@ -86,7 +89,8 @@ namespace TaskManagerCLI
             {
                 Id = nextId,
                 Name = taskName,
-                Executors = new List<User>()
+                Executors = new List<User>(),
+                CreationDate = DateTime.Now
             };
             
             project.Tasks.Add(bugTask);
@@ -194,7 +198,7 @@ namespace TaskManagerCLI
                     epicTask.StoryTasks.Remove(story);
                     break;
                 default:
-                    throw new ArgumentException("This task wasn't located in this story task.");
+                    throw new ArgumentException("This task wasn't located in this epic task.");
             }
             
         }

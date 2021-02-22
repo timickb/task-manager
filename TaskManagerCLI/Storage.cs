@@ -11,6 +11,11 @@ namespace TaskManagerCLI
     /// </summary>
     public class Storage
     {
+        // Чтобы сериализатор отличал производные классы от Task.
+        private JsonSerializerSettings _settings = new JsonSerializerSettings() {
+            TypeNameHandling = Newtonsoft.Json.TypeNameHandling.All 
+        };
+        
         /// <summary>
         /// Path to the directory where the
         /// app data files locate.
@@ -50,7 +55,7 @@ namespace TaskManagerCLI
                 using var sr = new StreamReader(filePath);
                 var data = sr.ReadToEnd();
                 sr.Close();
-                return JsonConvert.DeserializeObject<List<User>>(data);
+                return JsonConvert.DeserializeObject<List<User>>(data, _settings);
             }
             catch (IOException)
             {
@@ -83,7 +88,7 @@ namespace TaskManagerCLI
                 using var sr = new StreamReader(filePath);
                 var data = sr.ReadToEnd();
                 sr.Close();
-                return JsonConvert.DeserializeObject<List<Project>>(data);
+                return JsonConvert.DeserializeObject<List<Project>>(data, _settings);
             }
             catch (IOException)
             {
@@ -104,7 +109,7 @@ namespace TaskManagerCLI
         /// to write to the file.</exception>
         public void WriteUsers(List<User> users)
         {
-            var data = JsonConvert.SerializeObject(users);
+            var data = JsonConvert.SerializeObject(users, _settings);
 
             var filePath = Path.Combine(DirectoryPath, "users.json");
 
@@ -133,7 +138,7 @@ namespace TaskManagerCLI
         /// to write to the file.</exception>
         public void WriteProjects(List<Project> projects)
         {
-            var data = JsonConvert.SerializeObject(projects);
+            var data = JsonConvert.SerializeObject(projects, _settings);
 
             var filePath = Path.Combine(DirectoryPath, "projects.json");
 
