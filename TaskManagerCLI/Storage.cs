@@ -28,7 +28,7 @@ namespace TaskManagerCLI
 
             DirectoryPath = path;
         }
-        
+
         /// <summary>
         /// Reads the file with saved users.
         /// </summary>
@@ -38,11 +38,18 @@ namespace TaskManagerCLI
         public List<User> ReadUsers()
         {
             var filePath = Path.Combine(DirectoryPath, "users.json");
+            
+            // If users file doesn't exist - return empty list.
+            if (!File.Exists(filePath))
+            {
+                return new List<User>();
+            }
 
             try
             {
                 using var sr = new StreamReader(filePath);
                 var data = sr.ReadToEnd();
+                sr.Close();
                 return JsonConvert.DeserializeObject<List<User>>(data);
             }
             catch (IOException)
@@ -54,7 +61,7 @@ namespace TaskManagerCLI
                 throw new Exception();
             }
         }
-        
+
         /// <summary>
         /// Reads the file with saved projects.
         /// </summary>
@@ -64,11 +71,18 @@ namespace TaskManagerCLI
         public List<Project> ReadProjects()
         {
             var filePath = Path.Combine(DirectoryPath, "projects.json");
+            
+            // If projects file doesn't exist - return empty list.
+            if (!File.Exists(filePath))
+            {
+                return new List<Project>();
+            }
 
             try
             {
                 using var sr = new StreamReader(filePath);
                 var data = sr.ReadToEnd();
+                sr.Close();
                 return JsonConvert.DeserializeObject<List<Project>>(data);
             }
             catch (IOException)
@@ -98,6 +112,7 @@ namespace TaskManagerCLI
             {
                 using var sw = new StreamWriter(filePath);
                 sw.Write(data);
+                sw.Close();
             }
             catch (IOException)
             {
@@ -118,14 +133,15 @@ namespace TaskManagerCLI
         /// to write to the file.</exception>
         public void WriteProjects(List<Project> projects)
         {
-            string data = JsonConvert.SerializeObject(projects);
+            var data = JsonConvert.SerializeObject(projects);
 
-            string filePath = Path.Combine(DirectoryPath, "projects.json");
+            var filePath = Path.Combine(DirectoryPath, "projects.json");
 
             try
             {
                 using var sw = new StreamWriter(filePath);
                 sw.Write(data);
+                sw.Close();
             }
             catch (IOException)
             {

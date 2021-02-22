@@ -24,21 +24,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="123defad-be63-4d47-85f6-607e86c4706b" name="Default Changelist" comment="User removing, project removing">
-      <change afterPath="$PROJECT_DIR$/TaskManagerCLI/Storage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Projects.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Users.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerAPI/AssigningException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerAPI/AssigningException.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerAPI/BugTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerAPI/BugTask.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerAPI/SimpleTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerAPI/SimpleTask.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerAPI/StoryTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerAPI/StoryTask.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerAPI/Task.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerAPI/Task.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Commands/AddUserCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/AddUserCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Projects.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Tasks.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Users.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Utils.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskManagerAPI/Project.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerAPI/Project.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Settings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Settings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Storage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Storage.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Utils.cs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,21 +81,22 @@
         <option value="$PROJECT_DIR$/TaskManagerLib/EpicTask.cs" />
         <option value="$PROJECT_DIR$/TaskManagerLib/User.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Utils.cs" />
-        <option value="$PROJECT_DIR$/TaskManagerCLI/Settings.cs" />
         <option value="$PROJECT_DIR$/TaskManagerLib/StoryTask.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Tasks.cs" />
-        <option value="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Users.cs" />
         <option value="$PROJECT_DIR$/TaskManagerAPI/EpicTask.cs" />
-        <option value="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Projects.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/Program.cs" />
-        <option value="$PROJECT_DIR$/TaskManagerCLI/TaskManager.cs" />
         <option value="$PROJECT_DIR$/TaskManagerAPI/Task.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/AddUserCommand.cs" />
         <option value="$PROJECT_DIR$/TaskManagerAPI/AssigningException.cs" />
         <option value="$PROJECT_DIR$/TaskManagerAPI/StoryTask.cs" />
         <option value="$PROJECT_DIR$/TaskManagerAPI/SimpleTask.cs" />
         <option value="$PROJECT_DIR$/TaskManagerAPI/BugTask.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerCLI/Settings.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/Storage.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerCLI/TaskManager.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerAPI/Project.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Users.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Projects.cs" />
       </list>
     </option>
   </component>
@@ -177,7 +171,7 @@
       <workItem from="1613487789485" duration="3800000" />
       <workItem from="1613591120033" duration="1778000" />
       <workItem from="1613845492304" duration="687000" />
-      <workItem from="1613934252796" duration="5402000" />
+      <workItem from="1613934252796" duration="7771000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1613231868880</created>
@@ -312,10 +306,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="623" height="528" key="SwitcherDM/0.0.1920.1080@0.0.1920.1080" timestamp="1613314529321" />
-    <state x="0" y="35" width="1920" height="1045" key="VCS.FileHistoryDialog" timestamp="1613294209751">
+    <state x="960" y="11" width="960" height="1069" key="VCS.FileHistoryDialog" timestamp="1613993960375">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="0" y="35" width="1920" height="1045" key="VCS.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1613294209751" />
+    <state x="960" y="11" width="960" height="1069" key="VCS.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1613993960375" />
     <state x="455" y="-186" width="1000" height="696" key="Vcs.Push.Dialog.v2" timestamp="1613331032294">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

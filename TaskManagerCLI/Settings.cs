@@ -9,12 +9,12 @@ namespace TaskManagerCLI
             MaxTasksAmountInProject = 16;
         }
 
-        public void ReadSettingsFromJSONFile(string filePath)
+        public void ReadSettings(string filePath)
         {
             // TODO: settings reading.
         }
 
-        public void WriteSettingsToJSONFile(string filePath)
+        public void WriteSettings(string filePath)
         {
             // TODO: settings writing.
         }
