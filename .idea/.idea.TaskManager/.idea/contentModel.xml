@@ -33,6 +33,7 @@
         <e p="Commands" t="Include">
           <e p="AddUserCommand.cs" t="Include" />
           <e p="RemoveUserCommand.cs" t="Include" />
+          <e p="UsersListCommand.cs" t="Include" />
         </e>
         <e p="ICommand.cs" t="Include" />
         <e p="Program.cs" t="Include" />

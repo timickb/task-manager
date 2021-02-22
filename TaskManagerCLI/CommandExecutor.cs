@@ -13,6 +13,7 @@ namespace TaskManagerCLI
             _commands = new List<ICommand>();
             _commands.Add(new AddUserCommand());
             _commands.Add(new RemoveUserCommand());
+            _commands.Add(new UsersListCommand());
         }
 
         /// <summary>
