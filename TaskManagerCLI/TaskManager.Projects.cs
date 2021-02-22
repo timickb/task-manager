@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using TaskManagerAPI;
 
@@ -20,7 +21,8 @@ namespace TaskManagerCLI
             var project = new Project()
             {
                 Id = nextId,
-                Name = name
+                Name = name,
+                Tasks = new List<Task>()
             };
             
             Projects.Add(project);
