@@ -23,29 +23,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="123defad-be63-4d47-85f6-607e86c4706b" name="Default Changelist" comment="Fixes">
-      <change afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/HelpCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/CommandExecutor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/CommandExecutor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Commands/AddExecutorToTaskCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/AddExecutorToTaskCommand.cs" afterDir="false" />
+    <list default="true" id="123defad-be63-4d47-85f6-607e86c4706b" name="Default Changelist" comment="Fixes &amp; /help">
       <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Commands/AddTaskCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/AddTaskCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Commands/AddUserCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/AddUserCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Commands/ChangeProjectNameCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/ChangeProjectNameCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Commands/CreateProjectCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/CreateProjectCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Commands/InsertTaskToEpicCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/InsertTaskToEpicCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Commands/ProjectsListCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/ProjectsListCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Commands/RemoveExecutorFromTaskCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/RemoveExecutorFromTaskCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Commands/RemoveProjectCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/RemoveProjectCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Commands/RemoveTaskCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/RemoveTaskCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Commands/RemoveTaskFromEpicCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/RemoveTaskFromEpicCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Commands/RemoveUserCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/RemoveUserCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Commands/SetTaskStatusCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/SetTaskStatusCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Commands/TasksListCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/TasksListCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/Commands/UsersListCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/UsersListCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/IExecutable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/IExecutable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Tasks.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Tasks.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Users.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Users.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,12 +91,12 @@
         <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/ProjectsListCommand.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/InsertTaskToEpicCommand.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/AddExecutorToTaskCommand.cs" />
-        <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/AddTaskCommand.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/AddUserCommand.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/ChangeProjectNameCommand.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/CreateProjectCommand.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/CommandExecutor.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/HelpCommand.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/AddTaskCommand.cs" />
       </list>
     </option>
   </component>
@@ -194,7 +173,7 @@
       <workItem from="1613487789485" duration="3800000" />
       <workItem from="1613591120033" duration="1778000" />
       <workItem from="1613845492304" duration="687000" />
-      <workItem from="1613934252796" duration="29115000" />
+      <workItem from="1613934252796" duration="29428000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1613231868880</created>
@@ -350,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614018536770</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Fixes &amp; /help">
+      <created>1614033805565</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1614033805565</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,29 +380,30 @@
     <MESSAGE value="Tasks by status sorting" />
     <MESSAGE value="/insert_task_to_epic, /remove_task_from_epic" />
     <MESSAGE value="Fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixes" />
+    <MESSAGE value="Fixes &amp; /help" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes &amp; /help" />
   </component>
   <component name="WindowStateProjectService">
     <state x="620" y="282" width="669" height="445" key="#Notifications" timestamp="1613314424182">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="620" y="282" width="669" height="445" key="#Notifications/0.0.1920.1080@0.0.1920.1080" timestamp="1613314424182" />
-    <state width="1864" height="492" key="GridCell.Tab.0.bottom" timestamp="1614032571710">
+    <state width="1864" height="472" key="GridCell.Tab.0.bottom" timestamp="1614033727562">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="492" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1614032571710" />
-    <state width="1864" height="492" key="GridCell.Tab.0.center" timestamp="1614032571709">
+    <state width="1864" height="472" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1614033727562" />
+    <state width="1864" height="472" key="GridCell.Tab.0.center" timestamp="1614033727560">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="492" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1614032571709" />
-    <state width="1864" height="492" key="GridCell.Tab.0.left" timestamp="1614032571708">
+    <state width="1864" height="472" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1614033727560" />
+    <state width="1864" height="472" key="GridCell.Tab.0.left" timestamp="1614033727559">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="492" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1614032571708" />
-    <state width="1864" height="492" key="GridCell.Tab.0.right" timestamp="1614032571709">
+    <state width="1864" height="472" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1614033727559" />
+    <state width="1864" height="472" key="GridCell.Tab.0.right" timestamp="1614033727561">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="492" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1614032571709" />
+    <state width="1864" height="472" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1614033727561" />
     <state width="1864" height="621" key="GridCell.Tab.1.bottom" timestamp="1614018520628">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -501,10 +488,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="960" y="11" width="960" height="1069" key="VCS.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1613993960375" />
-    <state x="455" y="-498" width="1000" height="696" key="Vcs.Push.Dialog.v2" timestamp="1614018539214">
+    <state x="455" y="-522" width="1000" height="696" key="Vcs.Push.Dialog.v2" timestamp="1614033809023">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="455" y="-498" width="1000" height="696" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1614018539214" />
+    <state x="455" y="-522" width="1000" height="696" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1614033809023" />
     <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1614032814436">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

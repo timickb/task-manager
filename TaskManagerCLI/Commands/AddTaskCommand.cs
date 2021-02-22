@@ -41,23 +41,29 @@ namespace TaskManagerCLI.Commands
                     "Project with specified id doesn't exist.");
             }
 
-
+            // If name has spaces we should concatenate all args after args[0]
+            var taskName = args[3];
+            for (var i = 4; i < args.Length; i++)
+            {
+                taskName += " " + args[i];
+            }
+            
             try
             {
                 // Check <taskType>.
                 switch (args[2])
                 {
                     case "epic":
-                        tm.CreateEpicTaskInProject(project, args[3]);
+                        tm.CreateEpicTaskInProject(project, taskName);
                         break;
                     case "story":
-                        tm.CreateStoryTaskInProject(project, args[3]);
+                        tm.CreateStoryTaskInProject(project, taskName);
                         break;
                     case "task":
-                        tm.CreateSimpleTaskInProject(project, args[3]);
+                        tm.CreateSimpleTaskInProject(project, taskName);
                         break;
                     case "bug":
-                        tm.CreateBugTaskInProject(project, args[3]);
+                        tm.CreateBugTaskInProject(project, taskName);
                         break;
                     default:
                         return new CommandExecutionResult(CommandExecutionStatus.Fail,
