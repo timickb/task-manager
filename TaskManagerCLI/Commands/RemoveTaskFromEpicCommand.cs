@@ -8,6 +8,9 @@ namespace TaskManagerCLI.Commands
         public string Name => "remove_task_from_epic";
         public string Usage => "<projectId> <taskId> <epicTaskId>";
 
+        public string Description =>
+            "Moves the task <taskId> in project <projectId> from container <epicTaskId> to the main project tasks list.";
+
         public CommandExecutionResult Run(string[] args)
         {
             if (args.Length < 4)

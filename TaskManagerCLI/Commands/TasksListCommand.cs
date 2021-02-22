@@ -8,6 +8,8 @@ namespace TaskManagerCLI.Commands
     {
         public string Name => "tasks";
         public string Usage => "<projectId>";
+        public string Description => "Prints the list of tasks connected to the project with id <projectId>";
+
         public CommandExecutionResult Run(string[] args)
         {
             if (args.Length < 2)

@@ -36,6 +36,7 @@
           <e p="AddUserCommand.cs" t="Include" />
           <e p="ChangeProjectNameCommand.cs" t="Include" />
           <e p="CreateProjectCommand.cs" t="Include" />
+          <e p="HelpCommand.cs" t="Include" />
           <e p="InsertTaskToEpicCommand.cs" t="Include" />
           <e p="ProjectsListCommand.cs" t="Include" />
           <e p="RemoveExecutorFromTaskCommand.cs" t="Include" />

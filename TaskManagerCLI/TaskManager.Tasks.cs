@@ -105,7 +105,7 @@ namespace TaskManagerCLI
         /// <param name="user">User object</param>
         public void AssignUserToTask(IAssignable task, User user)
         {
-            task.AddExecutor(user);
+            task.AddExecutor(GetUserById(user.Id));
         }
 
         /// <summary>
@@ -115,7 +115,7 @@ namespace TaskManagerCLI
         /// <param name="user">User object</param>
         public void UnassignUserFromTask(IAssignable task, User user)
         {
-            task.RemoveExecutor(user);
+            task.RemoveExecutor(GetUserById(user.Id));
         }
         
         /// <summary>

@@ -7,6 +7,10 @@ namespace TaskManagerCLI.Commands
     {
         public string Name => "insert_task_to_epic";
         public string Usage => "<projectId> <taskId> <epicTaskId>";
+
+        public string Description =>
+            "Moves the task <taskId> in project <projectId> from the main tasks list to the container <epicTaskId>.";
+
         public CommandExecutionResult Run(string[] args)
         {
             if (args.Length < 4)
@@ -14,28 +18,28 @@ namespace TaskManagerCLI.Commands
                 return new CommandExecutionResult(CommandExecutionStatus.WrongUsage,
                     $"Usage: {Name} {Usage}");
             }
-            
+
             if (!int.TryParse(args[1], out var projectId))
             {
                 return new CommandExecutionResult(
                     CommandExecutionStatus.Fail,
                     "Project Id must be an integer.");
             }
-            
+
             if (!int.TryParse(args[2], out var taskId))
             {
                 return new CommandExecutionResult(
                     CommandExecutionStatus.Fail,
                     "Task Id must be an integer.");
             }
-            
+
             if (!int.TryParse(args[3], out var epicTaskId))
             {
                 return new CommandExecutionResult(
                     CommandExecutionStatus.Fail,
                     "User Id must be an integer.");
             }
-            
+
             var project = TaskManager.GetInstance().GetProjectById(projectId);
 
             if (project == null)
@@ -60,7 +64,7 @@ namespace TaskManagerCLI.Commands
                 return new CommandExecutionResult(CommandExecutionStatus.Fail,
                     $"Task with specified id doesn't exist in project with id {projectId}");
             }
-            
+
             // Check whether the `task` IS NOT epic and whether the `epicTask` IS epic.
             if ((task is EpicTask) || !(epicTask is EpicTask))
             {
@@ -77,7 +81,7 @@ namespace TaskManagerCLI.Commands
                 return new CommandExecutionResult(CommandExecutionStatus.Fail,
                     e.Message);
             }
-            
+
             return new CommandExecutionResult(CommandExecutionStatus.OK,
                 "Success.");
         }

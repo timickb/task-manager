@@ -9,6 +9,7 @@ namespace TaskManagerCLI.Commands
     {
         public string Name => "users";
         public string Usage => "";
+        public string Description => "Prints the list of all users registered in the system.";
 
         public CommandExecutionResult Run(string[] args)
         {

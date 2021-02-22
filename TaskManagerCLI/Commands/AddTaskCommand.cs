@@ -10,6 +10,9 @@ namespace TaskManagerCLI.Commands
         public string Name => "add_task";
         public string Usage => "<projectId> <taskType> <taskName>";
 
+        public string Description =>
+            "Creates a task in project <projectId> with name <taskName> and with a type of status: story, task, bug, epic.";
+
         public CommandExecutionResult Run(string[] args)
         {
             if (args.Length < 4)
@@ -37,6 +40,7 @@ namespace TaskManagerCLI.Commands
                     CommandExecutionStatus.Fail,
                     "Project with specified id doesn't exist.");
             }
+
 
             try
             {

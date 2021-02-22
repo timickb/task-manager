@@ -6,11 +6,11 @@ namespace TaskManagerCLI
 {
     public class CommandExecutor
     {
-        private readonly List<IExecutable> _commands;
+        public static List<IExecutable> Commands;
 
         public CommandExecutor()
         {
-            _commands = new List<IExecutable>
+            Commands = new List<IExecutable>
             {
                 new AddUserCommand(),
                 new RemoveUserCommand(),
@@ -20,12 +20,14 @@ namespace TaskManagerCLI
                 new ProjectsListCommand(),
                 new ChangeProjectNameCommand(),
                 new AddTaskCommand(),
+                new RemoveTaskCommand(),
                 new TasksListCommand(),
                 new AddExecutorToTaskCommand(),
                 new RemoveExecutorFromTaskCommand(),
                 new SetTaskStatusCommand(),
                 new InsertTaskToEpicCommand(),
-                new RemoveTaskFromEpicCommand()
+                new RemoveTaskFromEpicCommand(),
+                new HelpCommand()
             };
         }
 
@@ -40,7 +42,7 @@ namespace TaskManagerCLI
             var commandName = args[0];
 
             // Find the command with name=commandName and execute it.
-            foreach (var command in _commands.Where(command => command.Name == commandName))
+            foreach (var command in Commands.Where(command => command.Name == commandName))
             {
                 return command.Run(args);
             }

@@ -6,6 +6,8 @@ namespace TaskManagerCLI.Commands
     {
         public string Name => "add_executor";
         public string Usage => "<projectId> <taskId> <userId>";
+        public string Description => "Makes the user <userId> an executor of task <taskId> in project <projectId>.";
+
         public CommandExecutionResult Run(string[] args)
         {
             if (args.Length < 4)

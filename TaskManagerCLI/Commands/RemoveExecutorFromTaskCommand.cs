@@ -6,6 +6,10 @@ namespace TaskManagerCLI.Commands
     {
         public string Name => "remove_executor";
         public string Usage => "<projectId> <taskId> <userId>";
+
+        public string Description =>
+            "Removes the user <userId> from the executors list of task <taskId> in project <projectId>.";
+
         public CommandExecutionResult Run(string[] args)
         {
             if (args.Length < 4)
@@ -13,28 +17,28 @@ namespace TaskManagerCLI.Commands
                 return new CommandExecutionResult(CommandExecutionStatus.WrongUsage,
                     $"Usage: {Name} {Usage}");
             }
-            
+
             if (!int.TryParse(args[1], out var projectId))
             {
                 return new CommandExecutionResult(
                     CommandExecutionStatus.Fail,
                     "Project Id must be an integer.");
             }
-            
+
             if (!int.TryParse(args[2], out var taskId))
             {
                 return new CommandExecutionResult(
                     CommandExecutionStatus.Fail,
                     "Task Id must be an integer.");
             }
-            
+
             if (!int.TryParse(args[3], out var userId))
             {
                 return new CommandExecutionResult(
                     CommandExecutionStatus.Fail,
                     "User Id must be an integer.");
             }
-            
+
             var project = TaskManager.GetInstance().GetProjectById(projectId);
 
             if (project == null)
@@ -53,7 +57,7 @@ namespace TaskManagerCLI.Commands
             }
 
             var user = TaskManager.GetInstance().GetUserById(userId);
-            
+
             if (user == null)
             {
                 return new CommandExecutionResult(CommandExecutionStatus.Fail,
@@ -75,7 +79,7 @@ namespace TaskManagerCLI.Commands
                 return new CommandExecutionResult(CommandExecutionStatus.Fail,
                     e.Message);
             }
-            
+
             return new CommandExecutionResult(CommandExecutionStatus.OK,
                 $"User with id {userId} was successfully removed from task with id {taskId}" +
                 "in project with id {projectId}.");

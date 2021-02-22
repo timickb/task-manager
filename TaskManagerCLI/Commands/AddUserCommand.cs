@@ -7,6 +7,7 @@ namespace TaskManagerCLI.Commands
     {
         public string Name => "add_user";
         public string Usage => "<userName>";
+        public string Description => "Creates a user with name <userName>.";
 
         public CommandExecutionResult Run(string[] args)
         {

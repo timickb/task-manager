@@ -36,12 +36,12 @@ namespace TaskManagerCLI
                 Id = nextId,
                 Name = name
             };
-            
+
             Users.Add(user);
 
             return user;
         }
-        
+
         /// <summary>
         /// Unbinds the user from all tasks
         /// and removes it from the list.
@@ -54,25 +54,43 @@ namespace TaskManagerCLI
             {
                 if (task is IAssignable assignable)
                 {
-                    assignable.RemoveExecutor(user);
+                    try
+                    {
+                        assignable.RemoveExecutor(user);
+                    }
+                    catch (AssigningException)
+                    {
+                    }
                 }
 
                 if (!(task is EpicTask epicTask)) continue;
-                    
+
                 foreach (var storyTask in epicTask.StoryTasks)
                 {
-                    storyTask.RemoveExecutor(user);
+                    try
+                    {
+                        storyTask.RemoveExecutor(user);
+                    }
+                    catch (AssigningException)
+                    {
+                    }
                 }
 
                 foreach (var simpleTask in epicTask.SimpleTasks)
                 {
-                    simpleTask.RemoveExecutor(user);
+                    try
+                    {
+                        simpleTask.RemoveExecutor(user);
+                    }
+                    catch (AssigningException)
+                    {
+                    }
                 }
             }
 
             Users.Remove(user);
         }
-        
+
         /// <summary>
         /// Very simple method.
         /// </summary>
@@ -81,8 +99,8 @@ namespace TaskManagerCLI
         public User GetUserById(int id)
         {
             return Users.Find(user => user.Id == id);
-        }    
-        
+        }
+
         /// <summary>
         /// Very simple method.
         /// </summary>

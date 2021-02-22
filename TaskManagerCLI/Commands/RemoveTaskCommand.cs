@@ -4,6 +4,7 @@ namespace TaskManagerCLI.Commands
     {
         public string Name => "remove_task";
         public string Usage => "<projectId> <taskId>";
+        public string Description => "Removes task <taskId> from project <projectId>.";
         public CommandExecutionResult Run(string[] args)
         {
             if (args.Length < 3)

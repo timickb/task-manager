@@ -6,6 +6,8 @@ namespace TaskManagerCLI.Commands
     {
         public string Name => "add_project";
         public string Usage => "<projectName>";
+        public string Description => "Creates project with name <projectName>. <projectName> can contain spaces.";
+
         public CommandExecutionResult Run(string[] args)
         {
             if (args.Length < 2)
@@ -15,10 +17,17 @@ namespace TaskManagerCLI.Commands
                     $"Usage: {Name} {Usage}");
             }
             
+            // If name has spaces we should concatenate all args after args[0]
+            var projectName = args[1];
+            for (var i = 2; i < args.Length; i++)
+            {
+                projectName += " " + args[i];
+            }
+            
             // Try to add new project.
             try
             {
-                TaskManager.GetInstance().CreateProject(args[1]);
+                TaskManager.GetInstance().CreateProject(projectName);
             }
             catch (ArgumentException e)
             {
@@ -31,7 +40,7 @@ namespace TaskManagerCLI.Commands
             // If everything is OK - return "OK" result.
             return new CommandExecutionResult(
                 CommandExecutionStatus.OK,
-                $"Project {args[1]} was successfully added.");
+                $"Project {projectName} was successfully added.");
         }
     }
 }

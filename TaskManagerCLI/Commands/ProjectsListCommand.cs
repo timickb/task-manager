@@ -7,6 +7,8 @@ namespace TaskManagerCLI.Commands
     {
         public string Name => "projects";
         public string Usage => "";
+        public string Description => "Print the list of all projects in the system.";
+
         public CommandExecutionResult Run(string[] args)
         {
             var projects = TaskManager.GetInstance().Projects;
