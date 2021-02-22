@@ -17,6 +17,7 @@ namespace TaskManagerCLI
             _commands.Add(new CreateProjectCommand());
             _commands.Add(new RemoveProjectCommand());
             _commands.Add(new ProjectsListCommand());
+            _commands.Add(new ChangeProjectNameCommand());
         }
 
         /// <summary>

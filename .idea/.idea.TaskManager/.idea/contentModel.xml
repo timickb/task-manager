@@ -32,6 +32,7 @@
         <e p="CommandExecutor.cs" t="Include" />
         <e p="Commands" t="Include">
           <e p="AddUserCommand.cs" t="Include" />
+          <e p="ChangeProjectNameCommand.cs" t="Include" />
           <e p="CreateProjectCommand.cs" t="Include" />
           <e p="ProjectsListCommand.cs" t="Include" />
           <e p="RemoveProjectCommand.cs" t="Include" />
