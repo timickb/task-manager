@@ -1,3 +1,4 @@
+using System;
 using TaskManagerAPI;
 
 namespace TaskManagerCLI.Commands
@@ -15,22 +16,21 @@ namespace TaskManagerCLI.Commands
                     CommandExecutionStatus.WrongUsage,
                     $"Usage: {Name} {Usage}");
             }
-
-            var userName = args[1];
-            if (false/*!Utils.IsUserNameCorrect(args[1])*/)
+            
+            // Try to add new user.
+            try
+            {
+                TaskManager.GetInstance().CreateUser(args[1]);
+            }
+            catch (ArgumentException e)
             {
                 return new CommandExecutionResult(
                     CommandExecutionStatus.Fail,
-                    "User name is incorrect.");
+                    e.Message
+                );
             }
-
-            // If everything is OK - add this user.
-            TaskManager.GetInstance().Users.Add(new User
-            {
-                Id = 0/*Utils.GetNextUserId()*/,
-                Name = args[1]
-            });
             
+            // If everything is OK - return "OK" result.
             return new CommandExecutionResult(
                 CommandExecutionStatus.OK,
                 $"User {args[1]} was successfully added.");

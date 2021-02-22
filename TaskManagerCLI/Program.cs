@@ -8,7 +8,7 @@ namespace TaskManagerCLI
         public const string ExitCommand = "exit";
         public static void Main(string[] args)
         {
-            /*Console.WriteLine("greeting");
+            Console.WriteLine("greeting");
             
             var executor = new CommandExecutor();
             string userInput;
@@ -18,8 +18,7 @@ namespace TaskManagerCLI
                 Console.Write("> ");
                 userInput = Console.ReadLine();
                 Console.WriteLine(executor.Execute(userInput));
-            } while (userInput != ExitCommand);*/
-            
+            } while (userInput != ExitCommand);
 
 
         }

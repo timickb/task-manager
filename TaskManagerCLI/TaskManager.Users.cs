@@ -21,7 +21,7 @@ namespace TaskManagerCLI
             }
             var nextId = Users.Select(user => user.Id).Prepend(0).Max() + 1;
 
-            var user = new User()
+            var user = new User
             {
                 Id = nextId,
                 Name = name

@@ -23,20 +23,18 @@ namespace TaskManagerCLI
         {
             var args = input.Split(' ');
             var commandName = args[0];
-            
+
             // Find the command with name=commandName and execute it.
             foreach (var command in _commands.Where(command => command.Name == commandName))
             {
                 return command.Run(args);
             }
 
-            if (commandName == Program.ExitCommand)
-            {
-                return CommandExecutionResult.ExitCommand;
-            }
-            
+            return commandName == Program.ExitCommand
+                ? CommandExecutionResult.ExitCommand
+                : CommandExecutionResult.UnknownCommand;
+
             // If command "commandName" wasn't found, execute the default command.
-            return CommandExecutionResult.UnknownCommand;
         }
     }
 }
