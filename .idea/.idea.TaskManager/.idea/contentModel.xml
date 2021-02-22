@@ -31,6 +31,7 @@
         <e p="CommandExecutionStatus.cs" t="Include" />
         <e p="CommandExecutor.cs" t="Include" />
         <e p="Commands" t="Include">
+          <e p="AddTaskCommand.cs" t="Include" />
           <e p="AddUserCommand.cs" t="Include" />
           <e p="ChangeProjectNameCommand.cs" t="Include" />
           <e p="CreateProjectCommand.cs" t="Include" />
@@ -44,6 +45,7 @@
         <e p="Settings.cs" t="Include" />
         <e p="Storage.cs" t="Include" />
         <e p="TaskManager.Projects.cs" t="Include" />
+        <e p="TaskManager.Tasks.cs" t="Include" />
         <e p="TaskManager.Users.cs" t="Include" />
         <e p="TaskManager.Utils.cs" t="Include" />
         <e p="TaskManager.cs" t="Include" />

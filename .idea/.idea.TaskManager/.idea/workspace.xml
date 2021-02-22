@@ -23,11 +23,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="123defad-be63-4d47-85f6-607e86c4706b" name="Default Changelist" comment="/add_project, /remove_project, /projects">
-      <change afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/ChangeProjectNameCommand.cs" afterDir="false" />
+    <list default="true" id="123defad-be63-4d47-85f6-607e86c4706b" name="Default Changelist" comment="/change_project_name">
+      <change afterPath="$PROJECT_DIR$/TaskManagerCLI/Commands/AddTaskCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Tasks.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerCLI/CommandExecutor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerCLI/CommandExecutor.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +75,6 @@
         <option value="$PROJECT_DIR$/TaskManagerLib/EpicTask.cs" />
         <option value="$PROJECT_DIR$/TaskManagerLib/User.cs" />
         <option value="$PROJECT_DIR$/TaskManagerLib/StoryTask.cs" />
-        <option value="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Tasks.cs" />
         <option value="$PROJECT_DIR$/TaskManagerAPI/EpicTask.cs" />
         <option value="$PROJECT_DIR$/TaskManagerAPI/Task.cs" />
         <option value="$PROJECT_DIR$/TaskManagerAPI/AssigningException.cs" />
@@ -98,6 +97,9 @@
         <option value="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Projects.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/ChangeProjectNameCommand.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/CommandExecutor.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerCLI/TaskManager.tasks.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerCLI/TaskManager.Tasks.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/AddTaskCommand.cs" />
       </list>
     </option>
   </component>
@@ -172,7 +174,7 @@
       <workItem from="1613487789485" duration="3800000" />
       <workItem from="1613591120033" duration="1778000" />
       <workItem from="1613845492304" duration="687000" />
-      <workItem from="1613934252796" duration="11107000" />
+      <workItem from="1613934252796" duration="12531000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1613231868880</created>
@@ -279,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614002674120</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="/change_project_name">
+      <created>1614003155209</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1614003155209</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,37 +325,38 @@
     <MESSAGE value="/removeuser" />
     <MESSAGE value="/users (list)" />
     <MESSAGE value="/add_project, /remove_project, /projects" />
-    <option name="LAST_COMMIT_MESSAGE" value="/add_project, /remove_project, /projects" />
+    <MESSAGE value="/change_project_name" />
+    <option name="LAST_COMMIT_MESSAGE" value="/change_project_name" />
   </component>
   <component name="WindowStateProjectService">
     <state x="620" y="282" width="669" height="445" key="#Notifications" timestamp="1613314424182">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="620" y="282" width="669" height="445" key="#Notifications/0.0.1920.1080@0.0.1920.1080" timestamp="1613314424182" />
-    <state width="1864" height="542" key="GridCell.Tab.0.bottom" timestamp="1614002661338">
+    <state width="1864" height="542" key="GridCell.Tab.0.bottom" timestamp="1614003145096">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="542" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1614002661338" />
-    <state width="1864" height="542" key="GridCell.Tab.0.center" timestamp="1614002661336">
+    <state width="1864" height="542" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1614003145096" />
+    <state width="1864" height="542" key="GridCell.Tab.0.center" timestamp="1614003145096">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="542" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1614002661336" />
-    <state width="1864" height="542" key="GridCell.Tab.0.left" timestamp="1614002661334">
+    <state width="1864" height="542" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1614003145096" />
+    <state width="1864" height="542" key="GridCell.Tab.0.left" timestamp="1614003145096">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="542" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1614002661334" />
-    <state width="1864" height="542" key="GridCell.Tab.0.right" timestamp="1614002661337">
+    <state width="1864" height="542" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1614003145096" />
+    <state width="1864" height="542" key="GridCell.Tab.0.right" timestamp="1614003145096">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1864" height="542" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1614002661337" />
+    <state width="1864" height="542" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1614003145096" />
     <state x="455" y="59" width="1000" height="663" key="Rider.ProjectTemplateDialog.Size" timestamp="1613229725600">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="455" y="59" width="1000" height="663" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1080@0.0.1920.1080" timestamp="1613229725600" />
-    <state x="729" y="-181" width="452" height="827" key="RiderGenerateDialog" timestamp="1614002711417">
+    <state x="729" y="-205" width="452" height="827" key="RiderGenerateDialog" timestamp="1614003208263">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="729" y="-181" width="452" height="827" key="RiderGenerateDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1614002711417" />
+    <state x="729" y="-205" width="452" height="827" key="RiderGenerateDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1614003208263" />
     <state x="0" y="-48" width="1920" height="1104" key="SettingsEditor" timestamp="1613990651828">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -359,10 +369,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="960" y="11" width="960" height="1069" key="VCS.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1613993960375" />
-    <state x="455" y="-330" width="1000" height="696" key="Vcs.Push.Dialog.v2" timestamp="1614002676463">
+    <state x="455" y="-354" width="1000" height="696" key="Vcs.Push.Dialog.v2" timestamp="1614003156798">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="455" y="-330" width="1000" height="696" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1614002676463" />
+    <state x="455" y="-354" width="1000" height="696" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1614003156798" />
     <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1613314532474">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
