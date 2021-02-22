@@ -4,6 +4,9 @@ using TaskManagerAPI;
 
 namespace TaskManagerCLI
 {
+    /// <summary>
+    /// [User] All methods relied to users.
+    /// </summary>
     public partial class TaskManager
     {
         /// <summary>
@@ -17,8 +20,15 @@ namespace TaskManagerCLI
         {
             if (!IsUserNameCorrect(name))
             {
-                throw new ArgumentException("User name is too long");
+                throw new ArgumentException("User name is too long or starts with a digit.");
             }
+
+            // Check if user with such name is already exists.
+            if (Users.Any(user => user.Name == name))
+            {
+                throw new ArgumentException("User with this name is already exists.");
+            }
+
             var nextId = Users.Select(user => user.Id).Prepend(0).Max() + 1;
 
             var user = new User
@@ -71,6 +81,16 @@ namespace TaskManagerCLI
         public User GetUserById(int id)
         {
             return Users.Find(user => user.Id == id);
+        }    
+        
+        /// <summary>
+        /// Very simple method.
+        /// </summary>
+        /// <param name="name">User name</param>
+        /// <returns>User object with specified name.</returns>
+        public User GetUserByName(string name)
+        {
+            return Users.Find(user => user.Name == name);
         }
     }
 }

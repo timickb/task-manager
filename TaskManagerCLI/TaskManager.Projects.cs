@@ -4,6 +4,9 @@ using TaskManagerAPI;
 
 namespace TaskManagerCLI
 {
+    /// <summary>
+    /// [Projects] All methods relied to projects.
+    /// </summary>
     public partial class TaskManager
     {
         public Project CreateProject(string name)

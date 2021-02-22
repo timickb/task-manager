@@ -20,35 +20,21 @@ namespace TaskManagerCLI
 
             Users = _storage.ReadUsers();
             Projects = _storage.ReadProjects();
-
         }
 
         public static TaskManager GetInstance()
         {
             return _instance ??= new TaskManager();
         }
-
-        public static bool IsUserNameCorrect(string name)
-        {
-            return name.Length <= 20;
-        }
-
-        public static bool IsProjectNameCorrect(string name)
-        {
-            return name.Length <= 40;
-        }
-
-        public static bool IsProjectDescriptionCorrect(string desc)
-        {
-            return desc.Length <= 48;
-        }
+        
+        
 
         private readonly Settings _settings;
         private readonly Storage _storage;
-        
+
         public List<User> Users { get; }
         public List<Project> Projects { get; }
-        
+
         /// <summary>
         /// Simple method that allows to save
         /// all changed app data in one code line.

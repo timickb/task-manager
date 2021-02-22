@@ -40,6 +40,7 @@
         <e p="Storage.cs" t="Include" />
         <e p="TaskManager.Projects.cs" t="Include" />
         <e p="TaskManager.Users.cs" t="Include" />
+        <e p="TaskManager.Utils.cs" t="Include" />
         <e p="TaskManager.cs" t="Include" />
         <e p="TaskManagerCLI.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
