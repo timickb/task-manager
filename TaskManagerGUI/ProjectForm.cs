@@ -34,6 +34,7 @@ namespace TaskManagerGUI
             listView.View = View.List;
             listView.Scrollable = true;
             listView.MouseDoubleClick += OnListItemDoubleClick;
+            listView.Scrollable = true;
         }
 
         /// <summary>
@@ -56,6 +57,7 @@ namespace TaskManagerGUI
             listView.Clear();
             foreach(var task in ConnectedProject.Tasks)
             {
+            
                 listView.Items.Add(new ListViewItem(task.ToString()));
             }
         }
@@ -76,6 +78,16 @@ namespace TaskManagerGUI
 
             TaskManager.GetInstance().CommitChanges();
             UpdateTasksList();
+        }
+
+        private void removeProjectButton_Click(object sender, EventArgs e)
+        {
+            var result = CmdExecutor.Execute($"remove_project {ConnectedProject.Id}");
+            if(result.Status == CommandExecutionStatus.OK)
+            {
+                MessageBox.Show(result.TextOutput, "Сообщение");
+                Close();
+            }
         }
     }
 }

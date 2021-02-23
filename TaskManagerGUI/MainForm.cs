@@ -20,7 +20,6 @@ namespace TaskManagerGUI
             CmdExecutor = new CommandExecutor();
             SetupListView();
             UpdateProjectsList();
-        
             
         }
         
@@ -48,6 +47,7 @@ namespace TaskManagerGUI
             {
                 using var form = new ProjectForm((clickedItem as ProjectListViewItem).ConnectedProject, CmdExecutor);
                 var result = form.ShowDialog();
+                UpdateProjectsList();
             }
         }
 
@@ -84,6 +84,12 @@ namespace TaskManagerGUI
             {
                 listView.Items.Add(new ProjectListViewItem(project));
             }
+        }
+
+        private void usersManageButton_Click(object sender, EventArgs e)
+        {
+            using var form = new UsersForm(CmdExecutor);
+            var result = form.ShowDialog();
         }
     }
 }
