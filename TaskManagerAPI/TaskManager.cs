@@ -12,7 +12,7 @@ namespace TaskManagerAPI
 
         private TaskManager()
         {
-            _storage = new Storage("./");
+            _storage = new Storage("D://");
 
             Users = _storage.ReadUsers();
             Projects = _storage.ReadProjects();

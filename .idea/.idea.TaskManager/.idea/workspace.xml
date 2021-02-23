@@ -24,10 +24,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="123defad-be63-4d47-85f6-607e86c4706b" name="Default Changelist" comment="GUI">
-      <change afterPath="$PROJECT_DIR$/TaskManagerGUI/ProjectListViewItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="123defad-be63-4d47-85f6-607e86c4706b" name="Default Changelist" comment="P">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskManagerGUI/ProjectForm.Designer.cs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +48,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/TaskManagerCLI/CommandExecutionResult.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/CommandExecutionStatus.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/Utils.cs" />
         <option value="$PROJECT_DIR$/TaskManagerLib/Program.cs" />
@@ -100,6 +98,7 @@
         <option value="$PROJECT_DIR$/TaskManagerGUI/MainForm.Designer.cs" />
         <option value="$PROJECT_DIR$/TaskManagerGUI/ProjectListViewItem.cs" />
         <option value="$PROJECT_DIR$/TaskManagerGUI/MainForm.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerGUI/ProjectForm.cs" />
       </list>
     </option>
   </component>
@@ -196,7 +195,8 @@
       <workItem from="1613845492304" duration="687000" />
       <workItem from="1613934252796" duration="30261000" />
       <workItem from="1614025884027" duration="2372000" />
-      <workItem from="1614067498816" duration="2308000" />
+      <workItem from="1614067498816" duration="2869000" />
+      <workItem from="1614070443169" duration="87000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1613231868880</created>
@@ -427,25 +427,25 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="620" y="282" width="669" height="445" key="#Notifications/0.0.1920.1080@0.0.1920.1080" timestamp="1613314424182" />
-    <state width="1237" height="176" key="GridCell.Tab.0.bottom" timestamp="1614069732649">
+    <state width="1237" height="176" key="GridCell.Tab.0.bottom" timestamp="1614070398840">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1614069732649" />
+    <state width="1237" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1614070398840" />
     <state width="1864" height="404" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1614034759129" />
-    <state width="1237" height="176" key="GridCell.Tab.0.center" timestamp="1614069732648">
+    <state width="1237" height="176" key="GridCell.Tab.0.center" timestamp="1614070398839">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1614069732648" />
+    <state width="1237" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1614070398839" />
     <state width="1864" height="404" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1614034759128" />
-    <state width="1237" height="176" key="GridCell.Tab.0.left" timestamp="1614069732648">
+    <state width="1237" height="176" key="GridCell.Tab.0.left" timestamp="1614070398839">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1614069732648" />
+    <state width="1237" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1614070398839" />
     <state width="1864" height="404" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1614034759128" />
-    <state width="1237" height="176" key="GridCell.Tab.0.right" timestamp="1614069732648">
+    <state width="1237" height="176" key="GridCell.Tab.0.right" timestamp="1614070398840">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1614069732648" />
+    <state width="1237" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1614070398840" />
     <state width="1864" height="404" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1614034759129" />
     <state width="1237" height="247" key="GridCell.Tab.1.bottom" timestamp="1614060783028">
       <screen x="0" y="0" width="1280" height="720" />

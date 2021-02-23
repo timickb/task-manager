@@ -46,7 +46,8 @@ namespace TaskManagerGUI
             var clickedItem = senderList.HitTest(mouseEventArgs.Location).Item;
             if (clickedItem != null)
             {
-                MessageBox.Show(clickedItem.Text, "clicked");
+                using var form = new ProjectForm((clickedItem as ProjectListViewItem).ConnectedProject, CmdExecutor);
+                var result = form.ShowDialog();
             }
         }
 
@@ -62,7 +63,7 @@ namespace TaskManagerGUI
             using var form = new InputDialog("Введите название проекта");
             var result = form.ShowDialog();
 
-            if (result != DialogResult.OK) return;
+            //if (result != DialogResult.OK) return;
 
             var response = CmdExecutor.Execute($"add_project {form.Value}");
             MessageBox.Show(response.TextOutput,

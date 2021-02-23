@@ -25,5 +25,10 @@ namespace TaskManagerGUI
             DialogResult = DialogResult.OK;
             Close();
         }
+
+        private void applyButton_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
