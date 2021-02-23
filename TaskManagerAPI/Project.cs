@@ -20,7 +20,7 @@ namespace TaskManagerAPI
 
         public override string ToString()
         {
-            return $"[Project #{Id}] {Name} ({Description}) | {Tasks.Count} connected tasks.";
+            return $"[Project #{Id}] {Name} | {Tasks.Count} connected tasks.";
         }
     }
 }

@@ -32,7 +32,7 @@ namespace TaskManagerAPI
 
         public override string ToString()
         {
-            var result = $"[StoryTask #{Id}] {Name} ({Description}) " +
+            var result = $"[StoryTask #{Id}] {Name} " +
                          $"| Created {CreationDate} " +
                          $"| {Status.ToString()} " +
                          $"| {Executors.Count} executors: {Environment.NewLine}";

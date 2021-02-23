@@ -31,7 +31,7 @@ namespace TaskManagerAPI
 
         public override string ToString()
         {
-            var result = $"[BugTask #{Id}] {Name} ({Description}) " +
+            var result = $"[BugTask #{Id}] {Name} " +
                          $"| created {CreationDate} " +
                          $"| {Status.ToString()} " +
                          $"| {Executors.Count} executors: {Environment.NewLine}";

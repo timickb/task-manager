@@ -15,7 +15,7 @@ namespace TaskManagerAPI
 
         public override string ToString()
         {
-            var result = $"[EpicTask #{Id}] {Name} ({Description}) | created {CreationDate} | " +
+            var result = $"[EpicTask #{Id}] {Name} | created {CreationDate} | " +
                          $"{Status.ToString()} | {StoryTasks.Count + SimpleTasks.Count} connected subtasks: ";
             result = SimpleTasks.Aggregate(result, (current, task) => current + (task.Id + ", "));
             result = StoryTasks.Aggregate(result, (current, task) => current + (task.Id + ", "));

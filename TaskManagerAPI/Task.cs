@@ -22,7 +22,7 @@ namespace TaskManagerAPI
 
         public override string ToString()
         {
-            return $"[Task #{Id}] {Name} ({Description}) | created {CreationDate} | {Status.ToString()}";
+            return $"[Task #{Id}] {Name} | created {CreationDate} | {Status.ToString()}";
         }
     }
 }

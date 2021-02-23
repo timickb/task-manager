@@ -25,7 +25,7 @@ namespace TaskManagerAPI
 
         public override string ToString()
         {
-            var result = $"[SimpleTask #{Id}] {Name} ({Description})" +
+            var result = $"[SimpleTask #{Id}] {Name} " +
                    $"| created {CreationDate} " +
                    $"| {Status.ToString()}" +
                    $"| {Executors.Count} executors: {Environment.NewLine}";
