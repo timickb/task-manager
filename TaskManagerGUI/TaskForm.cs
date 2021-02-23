@@ -34,7 +34,7 @@ namespace TaskManagerGUI
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void addExecutorButton_Click(object sender, EventArgs e)
+        private void AddExecutorButton_Click(object sender, EventArgs e)
         {
             var dialog = new InputDialog("Введите имя пользователя");
             dialog.ShowDialog();
@@ -68,7 +68,7 @@ namespace TaskManagerGUI
             {
                 executorsComboBox.Items.Add(user.Name);
             }
-            executorsComboBox.SelectedIndex = 0;
+         
         }
 
         /// <summary>
@@ -77,7 +77,7 @@ namespace TaskManagerGUI
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void removeExecutorButton_Click(object sender, EventArgs e)
+        private void RemoveExecutorButton_Click(object sender, EventArgs e)
         {
             if (executorsComboBox.SelectedItem == null) return;
             string userName = (string)executorsComboBox.SelectedItem;
@@ -100,7 +100,7 @@ namespace TaskManagerGUI
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void statusComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void StatusComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (statusComboBox.SelectedItem == null) return;
 

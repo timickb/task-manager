@@ -103,7 +103,7 @@ namespace TaskManagerGUI
             this.addTaskButton.TabIndex = 0;
             this.addTaskButton.Text = "Создать задачу";
             this.addTaskButton.UseVisualStyleBackColor = true;
-            this.addTaskButton.Click += new System.EventHandler(this.addTaskButton_Click);
+            this.addTaskButton.Click += new System.EventHandler(this.AddTaskButton_Click);
             // 
             // removeProjectButton
             // 
@@ -114,7 +114,7 @@ namespace TaskManagerGUI
             this.removeProjectButton.TabIndex = 1;
             this.removeProjectButton.Text = "Удалить проект";
             this.removeProjectButton.UseVisualStyleBackColor = true;
-            this.removeProjectButton.Click += new System.EventHandler(this.removeProjectButton_Click);
+            this.removeProjectButton.Click += new System.EventHandler(this.RemoveProjectButton_Click);
             // 
             // ProjectForm
             // 

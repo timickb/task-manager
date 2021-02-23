@@ -52,9 +52,18 @@ namespace TaskManagerGUI
                 var taskId = (int)clickedItem.Tag;
                 var task = TaskManager.GetInstance().GetTaskByIdInProject(ConnectedProject, taskId);
                 if (task == null) return;
-
-                using var form = new TaskForm(ConnectedProject, task, CmdExecutor);
-                form.ShowDialog();
+                
+                // То, какое диалоговое окно нужно открыть для редактирования
+                // задачи, зависит от ее типа.
+                if (task is IAssignable)
+                {
+                    using var form = new TaskForm(ConnectedProject, task, CmdExecutor);
+                    form.ShowDialog();
+                } else if(task is EpicTask)
+                {
+                    using var form = new EpicTaskForm(ConnectedProject, task as EpicTask, CmdExecutor);
+                    form.ShowDialog();
+                }
             }
         }
 
@@ -70,7 +79,7 @@ namespace TaskManagerGUI
             }
         }
 
-        private void addTaskButton_Click(object sender, EventArgs e)
+        private void AddTaskButton_Click(object sender, EventArgs e)
         {
             using var nameForm = new InputDialog("Введите название задачи");
             nameForm.ShowDialog();
@@ -88,7 +97,7 @@ namespace TaskManagerGUI
             UpdateTasksList();
         }
 
-        private void removeProjectButton_Click(object sender, EventArgs e)
+        private void RemoveProjectButton_Click(object sender, EventArgs e)
         {
             var result = CmdExecutor.Execute($"remove_project {ConnectedProject.Id}");
             if (result.Status == CommandExecutionStatus.OK)

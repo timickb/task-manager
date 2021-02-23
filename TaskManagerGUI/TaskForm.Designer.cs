@@ -94,7 +94,7 @@
             this.statusComboBox.Name = "statusComboBox";
             this.statusComboBox.Size = new System.Drawing.Size(182, 33);
             this.statusComboBox.TabIndex = 2;
-            this.statusComboBox.SelectedIndexChanged += new System.EventHandler(this.statusComboBox_SelectedIndexChanged);
+            this.statusComboBox.SelectedIndexChanged += new System.EventHandler(this.StatusComboBox_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -138,7 +138,7 @@
             this.addExecutorButton.TabIndex = 1;
             this.addExecutorButton.Text = "+";
             this.addExecutorButton.UseVisualStyleBackColor = true;
-            this.addExecutorButton.Click += new System.EventHandler(this.addExecutorButton_Click);
+            this.addExecutorButton.Click += new System.EventHandler(this.AddExecutorButton_Click);
             // 
             // removeExecutorButton
             // 
@@ -148,7 +148,7 @@
             this.removeExecutorButton.TabIndex = 2;
             this.removeExecutorButton.Text = "-";
             this.removeExecutorButton.UseVisualStyleBackColor = true;
-            this.removeExecutorButton.Click += new System.EventHandler(this.removeExecutorButton_Click);
+            this.removeExecutorButton.Click += new System.EventHandler(this.RemoveExecutorButton_Click);
             // 
             // label4
             // 

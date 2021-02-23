@@ -79,7 +79,7 @@
             this.createProjectButton.TabIndex = 0;
             this.createProjectButton.Text = "Создать проект";
             this.createProjectButton.UseVisualStyleBackColor = true;
-            this.createProjectButton.Click += createProjectButton_Click;
+            this.createProjectButton.Click += CreateProjectButton_Click;
             // 
             // usersManageButton
             // 
@@ -90,7 +90,7 @@
             this.usersManageButton.TabIndex = 1;
             this.usersManageButton.Text = "Управление пользовтелями";
             this.usersManageButton.UseVisualStyleBackColor = true;
-            this.usersManageButton.Click += new System.EventHandler(this.usersManageButton_Click);
+            this.usersManageButton.Click += new System.EventHandler(this.UsersManageButton_Click);
             // 
             // listView
             // 

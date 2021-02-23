@@ -22,7 +22,7 @@ namespace TaskManagerGUI
   
         }
 
-        private void addUserButton_Click(object sender, EventArgs e)
+        private void AddUserButton_Click(object sender, EventArgs e)
         {
             var form = new InputDialog("Введите имя нового пользователя");
             form.ShowDialog();
@@ -41,7 +41,7 @@ namespace TaskManagerGUI
             TaskManagerAPI.TaskManager.GetInstance().CommitChanges();
         }
 
-        private void removeUserButton_Click(object sender, EventArgs e)
+        private void RemoveUserButton_Click(object sender, EventArgs e)
         {
             var selectedItem = listView.SelectedItems;
 

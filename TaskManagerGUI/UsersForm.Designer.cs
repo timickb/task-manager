@@ -100,7 +100,7 @@
             this.addUserButton.TabIndex = 0;
             this.addUserButton.Text = "Создать пользователя";
             this.addUserButton.UseVisualStyleBackColor = true;
-            this.addUserButton.Click += new System.EventHandler(this.addUserButton_Click);
+            this.addUserButton.Click += new System.EventHandler(this.AddUserButton_Click);
             // 
             // removeUserButton
             // 
@@ -111,7 +111,7 @@
             this.removeUserButton.TabIndex = 1;
             this.removeUserButton.Text = "Удалить пользователя";
             this.removeUserButton.UseVisualStyleBackColor = true;
-            this.removeUserButton.Click += new System.EventHandler(this.removeUserButton_Click);
+            this.removeUserButton.Click += new System.EventHandler(this.RemoveUserButton_Click);
             // 
             // UsersForm
             // 

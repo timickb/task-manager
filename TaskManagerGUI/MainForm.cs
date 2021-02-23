@@ -58,7 +58,7 @@ namespace TaskManagerGUI
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void createProjectButton_Click(object sender, EventArgs e)
+        private void CreateProjectButton_Click(object sender, EventArgs e)
         {
             using var form = new InputDialog("Введите название проекта");
             var result = form.ShowDialog();
@@ -86,7 +86,7 @@ namespace TaskManagerGUI
             }
         }
 
-        private void usersManageButton_Click(object sender, EventArgs e)
+        private void UsersManageButton_Click(object sender, EventArgs e)
         {
             using var form = new UsersForm(CmdExecutor);
             var result = form.ShowDialog();
