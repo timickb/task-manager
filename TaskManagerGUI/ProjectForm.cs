@@ -14,12 +14,13 @@ namespace TaskManagerGUI
         {
             ConnectedProject = project;
             CmdExecutor = ex;
-           
+
             InitializeComponent();
 
             projectName.Text = project.Name;
             this.Text = "Проект";
 
+            SetupListView();
             UpdateTasksList();
 
         }
@@ -48,17 +49,24 @@ namespace TaskManagerGUI
             var clickedItem = senderList.HitTest(mouseEventArgs.Location).Item;
             if (clickedItem != null)
             {
-                MessageBox.Show("Task clicked", "title");
+                var taskId = (int)clickedItem.Tag;
+                var task = TaskManager.GetInstance().GetTaskByIdInProject(ConnectedProject, taskId);
+                if (task == null) return;
+
+                using var form = new TaskForm(ConnectedProject, task, CmdExecutor);
+                form.ShowDialog();
             }
         }
 
         public void UpdateTasksList()
         {
             listView.Clear();
-            foreach(var task in ConnectedProject.Tasks)
+            foreach (var task in ConnectedProject.Tasks)
             {
-            
-                listView.Items.Add(new ListViewItem(task.ToString()));
+                var item = new ListViewItem(task.ToString());
+                // Запишем в метаданные элемента списка айди задачи.
+                item.Tag = task.Id;
+                listView.Items.Add(item);
             }
         }
 
@@ -83,7 +91,7 @@ namespace TaskManagerGUI
         private void removeProjectButton_Click(object sender, EventArgs e)
         {
             var result = CmdExecutor.Execute($"remove_project {ConnectedProject.Id}");
-            if(result.Status == CommandExecutionStatus.OK)
+            if (result.Status == CommandExecutionStatus.OK)
             {
                 MessageBox.Show(result.TextOutput, "Сообщение");
                 Close();

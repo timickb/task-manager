@@ -79,6 +79,7 @@
             this.createProjectButton.TabIndex = 0;
             this.createProjectButton.Text = "Создать проект";
             this.createProjectButton.UseVisualStyleBackColor = true;
+            this.createProjectButton.Click += createProjectButton_Click;
             // 
             // usersManageButton
             // 
