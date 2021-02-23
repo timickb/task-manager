@@ -37,6 +37,7 @@ namespace TaskManagerGUI
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.addTaskButton = new System.Windows.Forms.Button();
             this.removeProjectButton = new System.Windows.Forms.Button();
+            this.removeTaskButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -81,17 +82,19 @@ namespace TaskManagerGUI
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.01299F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.98701F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 201F));
             this.tableLayoutPanel2.Controls.Add(this.addTaskButton, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.removeProjectButton, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.removeTaskButton, 2, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 429);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(400, 45);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(611, 45);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
             // addTaskButton
@@ -99,7 +102,7 @@ namespace TaskManagerGUI
             this.addTaskButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.addTaskButton.Location = new System.Drawing.Point(3, 3);
             this.addTaskButton.Name = "addTaskButton";
-            this.addTaskButton.Size = new System.Drawing.Size(194, 39);
+            this.addTaskButton.Size = new System.Drawing.Size(186, 39);
             this.addTaskButton.TabIndex = 0;
             this.addTaskButton.Text = "Создать задачу";
             this.addTaskButton.UseVisualStyleBackColor = true;
@@ -108,13 +111,24 @@ namespace TaskManagerGUI
             // removeProjectButton
             // 
             this.removeProjectButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.removeProjectButton.Location = new System.Drawing.Point(203, 3);
+            this.removeProjectButton.Location = new System.Drawing.Point(195, 3);
             this.removeProjectButton.Name = "removeProjectButton";
-            this.removeProjectButton.Size = new System.Drawing.Size(194, 39);
+            this.removeProjectButton.Size = new System.Drawing.Size(211, 39);
             this.removeProjectButton.TabIndex = 1;
             this.removeProjectButton.Text = "Удалить проект";
             this.removeProjectButton.UseVisualStyleBackColor = true;
             this.removeProjectButton.Click += new System.EventHandler(this.RemoveProjectButton_Click);
+            // 
+            // removeTaskButton
+            // 
+            this.removeTaskButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.removeTaskButton.Location = new System.Drawing.Point(412, 3);
+            this.removeTaskButton.Name = "removeTaskButton";
+            this.removeTaskButton.Size = new System.Drawing.Size(196, 39);
+            this.removeTaskButton.TabIndex = 2;
+            this.removeTaskButton.Text = "Удалить задачу";
+            this.removeTaskButton.UseVisualStyleBackColor = true;
+            this.removeTaskButton.Click += new System.EventHandler(this.RemoveTaskButton_Click);
             // 
             // ProjectForm
             // 
@@ -145,5 +159,6 @@ namespace TaskManagerGUI
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button addTaskButton;
         private System.Windows.Forms.Button removeProjectButton;
+        private System.Windows.Forms.Button removeTaskButton;
     }
 }

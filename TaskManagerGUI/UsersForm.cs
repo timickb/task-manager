@@ -46,8 +46,15 @@ namespace TaskManagerGUI
             var selectedItem = listView.SelectedItems;
 
             if (selectedItem == null) return;
+            int userId;
 
-            int userId = (int)selectedItem[0].Tag;
+            try
+            {
+                userId = (int)selectedItem[0].Tag;
+            } catch(ArgumentOutOfRangeException)
+            {
+                return;
+            }
 
             var result = CmdExecutor.Execute($"remove_user {userId}");
             MessageBox.Show(result.TextOutput,

@@ -64,6 +64,7 @@ namespace TaskManagerGUI
                     using var form = new EpicTaskForm(ConnectedProject, task as EpicTask, CmdExecutor);
                     form.ShowDialog();
                 }
+                UpdateTasksList();
             }
         }
 
@@ -105,6 +106,27 @@ namespace TaskManagerGUI
                 MessageBox.Show(result.TextOutput, "Сообщение");
                 Close();
             }
+        }
+
+        private void RemoveTaskButton_Click(object sender, EventArgs e)
+        {
+            var selectedItem = listView.SelectedItems;
+
+            if (selectedItem == null) return;
+            int taskId;
+            try
+            {
+                taskId = (int)selectedItem[0].Tag;
+            } catch(ArgumentOutOfRangeException)
+            {
+                return;
+            }
+
+            var result = CmdExecutor.Execute($"remove_task {ConnectedProject.Id} {taskId}");
+            MessageBox.Show(result.TextOutput,
+                result.Status == CommandExecutionStatus.OK ? "Сообщение" : "Ошибка");
+            UpdateTasksList();
+            TaskManagerAPI.TaskManager.GetInstance().CommitChanges();
         }
     }
 }

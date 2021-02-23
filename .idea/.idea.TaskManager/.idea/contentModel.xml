@@ -69,6 +69,9 @@
       </e>
       <e p="TaskManagerGUI" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="EpicTaskForm.cs" t="Include" />
+        <e p="EpicTaskForm.Designer.cs" t="Include" />
+        <e p="EpicTaskForm.resx" t="Include" />
         <e p="InputDialog.cs" t="Include" />
         <e p="InputDialog.Designer.cs" t="Include" />
         <e p="InputDialog.resx" t="Include" />
@@ -85,8 +88,15 @@
         <e p="Program.cs" t="Include" />
         <e p="ProjectForm.cs" t="Include" />
         <e p="ProjectForm.Designer.cs" t="Include" />
+        <e p="ProjectForm.resx" t="Include" />
         <e p="ProjectListViewItem.cs" t="Include" />
+        <e p="TaskForm.cs" t="Include" />
+        <e p="TaskForm.Designer.cs" t="Include" />
+        <e p="TaskForm.resx" t="Include" />
         <e p="TaskManagerGUI.csproj" t="IncludeRecursive" />
+        <e p="UsersForm.cs" t="Include" />
+        <e p="UsersForm.Designer.cs" t="Include" />
+        <e p="UsersForm.resx" t="Include" />
       </e>
     </e>
   </component>

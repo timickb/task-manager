@@ -21,12 +21,13 @@ namespace TaskManagerAPI
 
         public void RemoveExecutor(User user)
         {
-            if (!Executors.Contains(user))
+            
+            if (Executors.All(u => u.Id != user.Id))
             {
                 throw new AssigningException("This user wasn't assigned to this task.");
             }
 
-            Executors.Remove(user);
+            Executors.Remove(Executors.Find(u => u.Id == user.Id));
         }
 
         public override string ToString()

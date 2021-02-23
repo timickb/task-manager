@@ -12,7 +12,8 @@ namespace TaskManagerAPI
 
         private TaskManager()
         {
-            _storage = new Storage("D://");
+            // By default app data stores in the executable directory.
+            _storage = new Storage("./");
 
             Users = _storage.ReadUsers();
             Projects = _storage.ReadProjects();

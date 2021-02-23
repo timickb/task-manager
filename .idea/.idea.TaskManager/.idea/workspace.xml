@@ -25,8 +25,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="123defad-be63-4d47-85f6-607e86c4706b" name="Default Changelist" comment="P">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TaskManager/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskManagerGUI/ProjectForm.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskManagerAPI/BugTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerAPI/BugTask.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskManagerAPI/SimpleTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerAPI/SimpleTask.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskManagerAPI/StoryTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerAPI/StoryTask.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskManagerAPI/TaskManager.Tasks.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerAPI/TaskManager.Tasks.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskManagerGUI/ProjectForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TaskManagerGUI/ProjectForm.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +53,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/TaskManagerCLI/CommandExecutionStatus.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/Utils.cs" />
         <option value="$PROJECT_DIR$/TaskManagerLib/Program.cs" />
         <option value="$PROJECT_DIR$/TaskManagerLib/Project.cs" />
@@ -65,7 +69,6 @@
         <option value="$PROJECT_DIR$/TaskManagerCLI/ICommand.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/TaskManager.cs" />
         <option value="$PROJECT_DIR$/TaskManagerAPI/AssigningException.cs" />
-        <option value="$PROJECT_DIR$/TaskManagerAPI/BugTask.cs" />
         <option value="$PROJECT_DIR$/TaskManagerAPI/EpicTask.cs" />
         <option value="$PROJECT_DIR$/TaskManagerAPI/Task.cs" />
         <option value="$PROJECT_DIR$/TaskManagerAPI/TaskStatus.cs" />
@@ -90,14 +93,16 @@
         <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/AddTaskCommand.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/CreateProjectCommand.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/Program.cs" />
-        <option value="$PROJECT_DIR$/TaskManagerAPI/SimpleTask.cs" />
-        <option value="$PROJECT_DIR$/TaskManagerAPI/StoryTask.cs" />
         <option value="$PROJECT_DIR$/TaskManagerCLI/Commands/RemoveUserCommand.cs" />
         <option value="$PROJECT_DIR$/TaskManagerGUI/InputDialog.cs" />
         <option value="$PROJECT_DIR$/TaskManagerGUI/InputDialog.Designer.cs" />
         <option value="$PROJECT_DIR$/TaskManagerGUI/MainForm.Designer.cs" />
         <option value="$PROJECT_DIR$/TaskManagerGUI/ProjectListViewItem.cs" />
         <option value="$PROJECT_DIR$/TaskManagerGUI/MainForm.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerAPI/TaskManager.Tasks.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerAPI/BugTask.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerAPI/SimpleTask.cs" />
+        <option value="$PROJECT_DIR$/TaskManagerAPI/StoryTask.cs" />
         <option value="$PROJECT_DIR$/TaskManagerGUI/ProjectForm.cs" />
       </list>
     </option>
@@ -197,6 +202,7 @@
       <workItem from="1614025884027" duration="2372000" />
       <workItem from="1614067498816" duration="2869000" />
       <workItem from="1614070443169" duration="87000" />
+      <workItem from="1614093935408" duration="1466000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1613231868880</created>
@@ -427,25 +433,25 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="620" y="282" width="669" height="445" key="#Notifications/0.0.1920.1080@0.0.1920.1080" timestamp="1613314424182" />
-    <state width="1237" height="176" key="GridCell.Tab.0.bottom" timestamp="1614070398840">
+    <state width="1237" height="413" key="GridCell.Tab.0.bottom" timestamp="1614095688636">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1614070398840" />
+    <state width="1237" height="413" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1614095688636" />
     <state width="1864" height="404" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1614034759129" />
-    <state width="1237" height="176" key="GridCell.Tab.0.center" timestamp="1614070398839">
+    <state width="1237" height="413" key="GridCell.Tab.0.center" timestamp="1614095688636">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1614070398839" />
+    <state width="1237" height="413" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1614095688636" />
     <state width="1864" height="404" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1614034759128" />
-    <state width="1237" height="176" key="GridCell.Tab.0.left" timestamp="1614070398839">
+    <state width="1237" height="413" key="GridCell.Tab.0.left" timestamp="1614095688636">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1614070398839" />
+    <state width="1237" height="413" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1614095688636" />
     <state width="1864" height="404" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1614034759128" />
-    <state width="1237" height="176" key="GridCell.Tab.0.right" timestamp="1614070398840">
+    <state width="1237" height="413" key="GridCell.Tab.0.right" timestamp="1614095688636">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1614070398840" />
+    <state width="1237" height="413" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1614095688636" />
     <state width="1864" height="404" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1614034759129" />
     <state width="1237" height="247" key="GridCell.Tab.1.bottom" timestamp="1614060783028">
       <screen x="0" y="0" width="1280" height="720" />
@@ -535,10 +541,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="729" y="-421" width="452" height="827" key="RiderGenerateDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1614032596462" />
-    <state x="0" y="-48" width="1920" height="1104" key="SettingsEditor" timestamp="1614059271936">
+    <state x="0" y="-48" width="1280" height="720" key="SettingsEditor" timestamp="1614094563492">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="0" y="-48" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1614059271936" />
+    <state x="0" y="-48" width="1280" height="720" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1614094563492" />
     <state x="0" y="-72" width="1920" height="1104" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1614006092577" />
     <state width="623" height="528" key="SwitcherDM" timestamp="1613314529321">
       <screen x="0" y="0" width="1920" height="1080" />
