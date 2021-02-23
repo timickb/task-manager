@@ -28,6 +28,12 @@ namespace TaskManagerGUI
             label4.Text = $"Создана {task.CreationDate.ToString()}";
         }
 
+        /// <summary>
+        /// Обработка добавления исполнителя
+        /// к задаче.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void addExecutorButton_Click(object sender, EventArgs e)
         {
             var dialog = new InputDialog("Введите имя пользователя");
@@ -50,16 +56,27 @@ namespace TaskManagerGUI
 
         }
 
+        /// <summary>
+        /// Читает список исполнителей из API и
+        /// записывает его в комбо бокс.
+        /// </summary>
         private void UpdateExecutorsComboBox()
         {
             var executors = (ConnectedTask as IAssignable).Executors;
             executorsComboBox.Items.Clear();
-            foreach(var user in executors)
+            foreach (var user in executors)
             {
                 executorsComboBox.Items.Add(user.Name);
             }
+            executorsComboBox.SelectedIndex = 0;
         }
 
+        /// <summary>
+        /// Обработка нажатия кнопки удаления
+        /// исполнителя задачи.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void removeExecutorButton_Click(object sender, EventArgs e)
         {
             if (executorsComboBox.SelectedItem == null) return;
@@ -77,8 +94,41 @@ namespace TaskManagerGUI
             TaskManager.GetInstance().CommitChanges();
         }
 
+        /// <summary>
+        /// Обработка выбора нового статуса задачи
+        /// в списке статусов задачи.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void statusComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (statusComboBox.SelectedItem == null) return;
+
+            var text = (string)statusComboBox.SelectedItem;
+
+            // Определяем статус задачи из енума исходя из того, что было выбрано в списке.
+            string taskStatus;
+            switch (text)
+            {
+                case "Новая":
+                    taskStatus = "opened";
+                    break;
+                case "В процессе выполнения":
+                    taskStatus = "inProgress";
+                    break;
+                case "Завершенная":
+                    taskStatus = "closed";
+                    break;
+                default:
+                    return;
+            }
+
+            var result = CmdExecutor.Execute(
+                $"set_task_status {ConnectedProject.Id} {ConnectedTask.Id} {taskStatus}");
+
+            MessageBox.Show(result.TextOutput, "Сообщение");
+
+            TaskManager.GetInstance().CommitChanges();
 
         }
     }
